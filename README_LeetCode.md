@@ -22,6 +22,10 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 # Algorithms
 
 ### Searching
+| Algo Name   |      Note      | 
+|----------|:-------------:|
+|[Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js)||
+
 
 # Solutions
 ### Binary Tree
