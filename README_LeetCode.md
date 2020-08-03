@@ -13,7 +13,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
-- [Solutions](#Solutions)
+- [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
 - [License](#license)
@@ -24,10 +24,10 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 ### Searching
 | Algo Name   |      Note      | 
 |----------|:-------------:|
-|[Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js)||
+|[Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js)| Shortest Path; Closer Nodes|
 
 
-# Solutions
+# LeetCode Solutions
 ### Binary Tree
 
 | Problems   |      Solutions      |  Description |
