@@ -10,18 +10,25 @@
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
+- [Data Structure](#data-structure)
+- [Algorithms](#algorithms)
+    - [Searching](#searching)
 - [Solutions](#Solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
 - [License](#license)
-- [Footer](#footer)
+
+# Data Structure
+# Algorithms
+
+### Searching
 
 # Solutions
 ### Binary Tree
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|------:|
-| [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Tranversal |
+| [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
 
 [(Back to top)](#table-of-contents)
 ### Others
@@ -34,25 +41,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 [(Back to top)](#table-of-contents)
 
 # License
+© Copyright by CodeXplore ☞ Do not Reup <br>
 [(Back to top)](#table-of-contents)
 
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
 
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below. -->
-
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
-
-# Footer
-[(Back to top)](#table-of-contents)
-
-<!-- Let's also add a footer because I love footers and also you **can** use this to convey important info.
-
-Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
-
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-
-<!-- Add the footer here -->
-
-<!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
