@@ -20,7 +20,12 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Footer](#footer)
 
 # Solutions
-[441. Arranging Coins](https://leetcode.com/problems/arranging-coins/) Solution: [Code](leetcode/441_Arranging_Coins.py)<br>
+ 
+
+| Problems   |      Solutions      |  Description |
+|----------|:-------------:|------:|
+| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)| [Code](/441_Arranging_Coins.py) |  |
+
 
 [(Back to top)](#table-of-contents)
 
