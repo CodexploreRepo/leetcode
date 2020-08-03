@@ -11,16 +11,13 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 - [Table of contents](#table-of-contents)
 - [Solutions](#Solutions)
-- [Usage](#usage)
-- [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
+    - [Binary Tree - BFS & DFS](#binary-tree)
     - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
 - [Footer](#footer)
 
 # Solutions
- 
+## Binary Tree
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|------:|
