@@ -17,14 +17,14 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Footer](#footer)
 
 # Solutions
-## Binary Tree
+### Binary Tree
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|------:|
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Tranversal |
 
 [(Back to top)](#table-of-contents)
-## Others
+### Others
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|------:|
