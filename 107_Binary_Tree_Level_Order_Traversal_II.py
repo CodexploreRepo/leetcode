@@ -8,7 +8,6 @@ class Solution:
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
         if (root):
             result = self.breathFirstSearch([root], [])
-        # print(nodeList)
             return result
         else: 
             return []
