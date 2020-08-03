@@ -12,7 +12,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Table of contents](#table-of-contents)
 - [Solutions](#Solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+    - [Others](#others)
 - [License](#license)
 - [Footer](#footer)
 
@@ -21,7 +21,14 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|------:|
-| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)| [Code](/441_Arranging_Coins.py) |  |
+| [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Tranversal |
+
+[(Back to top)](#table-of-contents)
+## Others
+
+| Problems   |      Solutions      |  Description |
+|----------|:-------------:|------:|
+| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
 
 
 [(Back to top)](#table-of-contents)
