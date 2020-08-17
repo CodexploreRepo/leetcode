@@ -32,20 +32,20 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 ### String
 
 | Problems   |      Solutions      |  Description |
-|----------|:-------------:|------:|
+|----------|:-------------:|:------|
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
 
 ### Binary Tree
 
 | Problems   |      Solutions      |  Description |
-|----------|:-------------:|------:|
+|----------|:-------------:|:------|
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
 
 [(Back to top)](#table-of-contents)
 ### Others
 
 | Problems   |      Solutions      |  Description |
-|----------|:-------------:|------:|
+|----------|:-------------:|:------|
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
 
 
