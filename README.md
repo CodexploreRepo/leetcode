@@ -17,6 +17,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [String](#string)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
+- [Resources](#resources)
 - [License](#license)
 
 # Data Structure
@@ -48,6 +49,9 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|:------|
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
+
+# Resources
+[Data Structure & Algo - TypeScript](https://github.com/CoffeelessProgrammer/Data-Structures-and-Algorithms-TS)
 
 
 [(Back to top)](#table-of-contents)
