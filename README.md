@@ -10,6 +10,7 @@ This is powered by CodeXplore
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
+- [Tips and Tricks](#tips-and-tricks)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -19,6 +20,16 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Others](#others)
 - [Resources](#resources)
 - [License](#license)
+
+# Tips and Tricks
+### Binary Number
+- [*Convert Binary Number to Integer*](/1290_convert_Binary_to_Integer.js) >>> For ex: 1 -> 0 -> 1 = 5
+    - Tips: Bitwise operation 
+        -  initialise an integer variable num to 0
+        - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
+        - `num << 1 | head.val` Add (|) next bit to num at least significant position
+    
+
 
 # Data Structure
 # Algorithms
@@ -46,9 +57,10 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 [(Back to top)](#table-of-contents)
 ### Others
 
-| Problems   |      Solutions      |  Description |
+| Problems   |      Solutions      |  Tips |
 |----------|:-------------:|:------|
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
+| [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
 
 # Resources
 [Data Structure & Algo - TypeScript](https://github.com/CoffeelessProgrammer/Data-Structures-and-Algorithms-TS)
