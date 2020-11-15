@@ -23,7 +23,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 # Tips and Tricks
 ### Binary Number
-- [*Convert Binary Number to Integer*](/1290_convert_Binary_to_Integer.js) >>> For ex: 1 -> 0 -> 1 = 5
+- [Convert Binary Number to Integer](/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
         - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
