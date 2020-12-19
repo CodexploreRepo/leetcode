@@ -79,7 +79,7 @@ public int[] twoSum(int[] nums, int target) {
 ```
 ## HashMap
 ### Initialize a Hashmap
-Method 1 (using Map interface): `Map<Integer, Integer> map = new HashMap<>();`
+Method 1 (using Map interface): `Map<Integer, Integer> map = new HashMap<>();`<br>
 Method 2                      : `HashMap<String, Integer> people = new HashMap<String, Integer>();`
 ### Put
 `map.put(key, value);`
