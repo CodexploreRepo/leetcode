@@ -63,7 +63,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | Problems   |      Solutions      |  Tips |
 |----------|:-------------:|:------|
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
-| [454. 4Sum II]|[Code](/454_4Sum_II.java)| Using Hash Map |
+| [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
 
 # Resources
