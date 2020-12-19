@@ -18,6 +18,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [String](#string)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
+- [Java Skills](#java-skills)
 - [Resources](#resources)
 - [License](#license)
 
@@ -66,6 +67,40 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
 | [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
+
+# Java Skills
+## Array
+### How to return an Array ?
+
+```Java
+public int[] twoSum(int[] nums, int target) {
+      ...
+      return new int[] {69, 123};
+```
+## HashMap
+### Initialize a Hashmap
+Method 1 (using Map interface): `Map<Integer, Integer> map = new HashMap<>();`
+Method 2                      : `HashMap<String, Integer> people = new HashMap<String, Integer>();`
+### Put
+`map.put(key, value);`
+### Get
+`map.get(key, value);`
+### Check if Key Exists
+`map.containsKey(key);`
+### Loop Through Hash Map 
+```Java
+// Print keys
+for (String i : capitalCities.keySet()) {
+  System.out.println(i);
+}
+
+// Print values
+for (String i : capitalCities.values()) {
+  System.out.println(i);
+}
+```
+
+
 
 # Resources
 [Data Structure & Algo - TypeScript](https://github.com/CoffeelessProgrammer/Data-Structures-and-Algorithms-TS)
