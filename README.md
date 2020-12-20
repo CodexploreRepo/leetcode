@@ -64,6 +64,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | Problems   |      Solutions      |  Tips |
 |----------|:-------------:|:------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)|[Code](/1_Two_Sum.java)| Using Hash Map |
+| [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)|[Code](/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
 | [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
