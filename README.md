@@ -16,6 +16,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [String](#string)
+    - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
 - [Java Skills](#java-skills)
@@ -49,6 +50,11 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Code](/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)|[Code](/1446_Consecutive_Characters.js)|2-pointer approach|
+
+### Linked List
+| Problems   |      Solutions      |  Description |
+|----------|:-------------:|:------|
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Code](/21_Merge_Two_Sorted_List.py)| Use 2 pointers: Head & Tail|
 
 
 ### Binary Tree
