@@ -16,6 +16,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [String](#string)
+    - [Number](#number)
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
@@ -51,6 +52,19 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)|[Code](/1446_Consecutive_Characters.js)|2-pointer approach|
 
+
+### Number
+
+| Problems   |      Solutions      |  Tips |
+|----------|:-------------:|:------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum/)|[Code](/1_Two_Sum.java)| Using Hash Map |
+| [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)|[Code](/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
+| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
+| [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
+| [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
+| [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](/1539_Kth_Missing_Positive_Number.py)||
+
+
 ### Linked List
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|:------|
@@ -65,15 +79,10 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
 
 [(Back to top)](#table-of-contents)
+
 ### Others
 
-| Problems   |      Solutions      |  Tips |
-|----------|:-------------:|:------|
-| [1. Two Sum](https://leetcode.com/problems/two-sum/)|[Code](/1_Two_Sum.java)| Using Hash Map |
-| [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)|[Code](/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
-| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
-| [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
-| [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
+[(Back to top)](#table-of-contents)
 
 # Java Skills
 ## Array
