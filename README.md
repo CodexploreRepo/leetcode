@@ -63,9 +63,12 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](/454_4Sum_II.java)| Using Hash Map |
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](/1539_Kth_Missing_Positive_Number.py)||
+
+[1436. Destination City](./1436_Destination_City.py)
+- Learn: using Hash Table to check for existing of elements instead of looping through 
 [1464. Maximum Product of Two Elements in an Array](./1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
 Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`.
-Learn: Find the 2 largest elements in nums
+- Learn: Find the 2 largest elements in nums
 
 ### Linked List
 | Problems   |      Solutions      |  Description |
