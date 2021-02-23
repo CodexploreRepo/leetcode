@@ -3,8 +3,3 @@ class Solution:
         counts = collections.Counter(nums)
 
         return sum([key for key, value in counts.items() if value == 1])
-                
-            
-            
-                
-        
