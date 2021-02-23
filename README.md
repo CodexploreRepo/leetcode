@@ -68,9 +68,9 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - **Learn #1**: Do not be misleading by Examples, find the general rule
     - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
 - [1748. Sum of Unique Elements](./1748_Sum_of_Unique_Elements.py)
-    - **Learn**: Using Hash Table to calculate Unique Element (like Below Code), we can use 
+    - **Learn**: Using Hash Table to calculate Unique Element (like below code), we can use `collections.Counter(nums)`
     ```Python
-            for num in nums:
+          for num in nums:
             if num in dict:
                 dict[num]+=1
             else:
