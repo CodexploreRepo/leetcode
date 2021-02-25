@@ -68,7 +68,8 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - **Learn #1**: Do not be misleading by Examples, find the general rule
     - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
 - [1370. Increasing Decreasing String](./1370_Increasing_Decreasing_String.py)
-    - **Learn #1**: 
+    - **Learn #1**: Hash Table + Sorted + Flag `desc` to toggle the sort direction `sorted(dict, reverse = desc)`
+    - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
 - [1436. Destination City](./1436_Destination_City.py)
     - **Learn**: using Hash Table to check for existing of elements instead of looping through 
 - [1464. Maximum Product of Two Elements in an Array](./1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
