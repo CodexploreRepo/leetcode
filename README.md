@@ -82,7 +82,23 @@ Given the array of integers `nums`, you will choose two different indices i and 
     ```
 ### 2D Matrix
 - [1351. Count Negative Numbers in a Sorted Matrix](./1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
-    - **Learn #1**: 
+    - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase 
+    - **Learn #2**: `Q(m*log(n))` Sorted Array => Binary Search Tree: to search to position of First Negative Number in the Array
+    ```Python
+     def binarySearch(row):
+            start = 0
+            end = len(row) - 1
+            
+            while (start <= end):
+                # Mid post 
+                mid = start + (end - start)//2
+                if (row[mid] < 0):
+                    end = mid - 1
+                else:
+                    start = mid + 1
+            
+            return len(row) - start
+    ```
 
 ### Linked List
 | Problems   |      Solutions      |  Description |
