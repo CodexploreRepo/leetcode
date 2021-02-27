@@ -15,8 +15,8 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Algorithms](#algorithms)
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
-    - [String](#string)
-    - [Number](#number)
+    - [String Array](#string-array)
+    - [2D Matrix](#2d-matrix)
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
@@ -44,19 +44,13 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 
 # LeetCode Solutions
-### String
+### String Array
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|:------|
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Code](/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)|[Code](/1446_Consecutive_Characters.js)|2-pointer approach|
-
-
-### Number
-
-| Problems   |      Solutions      |  Tips |
-|----------|:-------------:|:------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)|[Code](/1_Two_Sum.java)| Using Hash Map |
 | [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)|[Code](/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](/441_Arranging_Coins.py) | Using Mathematics Formula |
@@ -64,9 +58,11 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](/1539_Kth_Missing_Positive_Number.py)||
 
+
 - [1304. Find N Unique Integers Sum up to Zero](./1304_Find_N_Unique_Integers_Sum_up_to_Zero.py)
     - **Learn #1**: Do not be misleading by Examples, find the general rule
     - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
+
 - [1370. Increasing Decreasing String](./1370_Increasing_Decreasing_String.py)
     - **Learn #1**: Hash Table + Sorted + Flag `desc` to toggle the sort direction `sorted(dict, reverse = desc)`
     - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
@@ -84,7 +80,9 @@ Given the array of integers `nums`, you will choose two different indices i and 
             else:
                 dict[num]=1
     ```
-
+### 2D Matrix
+- [1351. Count Negative Numbers in a Sorted Matrix](./1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
+    - **Learn #1**: 
 
 ### Linked List
 | Problems   |      Solutions      |  Description |
