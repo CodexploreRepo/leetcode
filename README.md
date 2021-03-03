@@ -58,7 +58,14 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](/1539_Kth_Missing_Positive_Number.py)||
 
-
+- [728. Self Dividing Numbers](/728_Self_Dividing_Numbers.py)
+    - **Learn #1**: Splitting Numbers into Digit
+    ```Python
+     while n > 0:
+       d = n%10
+       #Do somthing here with each digit d
+       n //=10
+    ```
 - [1304. Find N Unique Integers Sum up to Zero](./1304_Find_N_Unique_Integers_Sum_up_to_Zero.py)
     - **Learn #1**: Do not be misleading by Examples, find the general rule
     - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
