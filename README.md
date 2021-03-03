@@ -59,7 +59,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](/1539_Kth_Missing_Positive_Number.py)||
 
 - [728. Self Dividing Numbers](/728_Self_Dividing_Numbers.py)
-    - **Learn #1**: Splitting Numbers into Digit
+    - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
     ```Python
      while n > 0:
        d = n%10
