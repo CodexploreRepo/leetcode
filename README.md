@@ -119,6 +119,7 @@ Given the array of integers `nums`, you will choose two different indices i and 
 |----------|:-------------:|:------|
 |104. Maximum Depth of Binary Tree|[Code](/104_Maximum_Depth_of_Binary_Tree.java) | DFS|
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/)|[Code](/107_Binary_Tree_Level_Order_Traversal_II.py) | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
+
 [617. Merge Two Binary Trees](/617_Merge_Two_Binary_Trees.py)
 - **Learn #1**: Using [Recursion](https://www.youtube.com/watch?v=p3vVYNngyxs). Identify the base cases
 
