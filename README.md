@@ -20,13 +20,13 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
-- [Java Skills](#java-skills)
+
 - [Resources](#resources)
 - [License](#license)
 
 # Tips and Tricks
 ### Binary Number
-- [Convert Binary Number to Integer](/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
+- [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
         - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
@@ -140,38 +140,6 @@ while(queue):
 ### Others
 
 [(Back to top)](#table-of-contents)
-
-# Java Skills
-## Array
-### How to return an Array ?
-
-```Java
-public int[] twoSum(int[] nums, int target) {
-      ...
-      return new int[] {69, 123};
-```
-## HashMap
-### Initialize a Hashmap
-Method 1 (using Map interface): `Map<Integer, Integer> map = new HashMap<>();`<br>
-Method 2                      : `HashMap<String, Integer> people = new HashMap<String, Integer>();`
-### Put
-`map.put(key, value);`
-### Get
-`map.get(key, value);`
-### Check if Key Exists
-`map.containsKey(key);`
-### Loop Through Hash Map 
-```Java
-// Print keys
-for (String i : capitalCities.keySet()) {
-  System.out.println(i);
-}
-
-// Print values
-for (String i : capitalCities.values()) {
-  System.out.println(i);
-}
-```
 
 
 
