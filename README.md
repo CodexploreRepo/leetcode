@@ -20,7 +20,6 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [Others](#others)
-
 - [Resources](#resources)
 - [License](#license)
 
