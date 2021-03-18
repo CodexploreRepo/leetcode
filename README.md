@@ -113,6 +113,29 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 
 ### Binary Tree
+#### General Tips for Tree:
+- **Learn #1**: Search Types
+    -  BFS : While ? Because using Recursion costs additional Space Complexity due to Recusive call in Stack
+    -  DFS : Recursion
+- **Learn #2**: Traversal Type
+    - Pre-Order: Root - Left - Right
+    - In-Order : Left - Root - Right
+    - Post-Order: Left - Right - Root
+- BFS Pseudo Code:
+```JavaScript
+BFS = function(root) {
+    res = []
+    queue = [root]
+
+    while(queue.length){
+        currentNode = queue.shift();
+        res.push(currentNode.val);
+        if (currentNode.left) queue.push(currentNode.left);
+        if (currentNode.right) queue.push(currentNode.right);
+    }
+    return res;
+}
+```
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|:------|
