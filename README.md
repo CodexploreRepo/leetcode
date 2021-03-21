@@ -145,6 +145,18 @@ BFS = function(root) {
 [617. Merge Two Binary Trees](./solution/617_Merge_Two_Binary_Trees.py)
 - **Learn #1**: Using [Recursion](https://www.youtube.com/watch?v=p3vVYNngyxs). Identify the base cases
 
+[897. Increasing Order Search Tree](./solution/897_Increasing_Order_Search_Tree.py)
+- **Learn #1**: Tracing through the entire tree using Current Node: `curr = tree`
+```Python
+tree = TreeNode(val = val_list.pop(0))
+curr = tree
+
+for i in range(0, len(val_list)):
+    val = val_list[i]
+    curr.right = TreeNode(val=val)
+    curr = curr.right
+```
+
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./solution/1379_Find_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree.py)
 - BFS Implementation in Python: using `pop(0)` for dequeue and `append` for enqueue
 ```Python
