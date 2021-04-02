@@ -130,20 +130,29 @@ Given the array of integers `nums`, you will choose two different indices i and 
     - In-Order : Left - Root - Right
     - Post-Order: Left - Right - Root
 - BFS Pseudo Code:
-```JavaScript
-BFS = function(root) {
+```Python
+def bfs(root):
     res = []
     queue = [root]
-
-    while(queue.length){
-        currentNode = queue.shift();
-        res.push(currentNode.val);
-        if (currentNode.left) queue.push(currentNode.left);
-        if (currentNode.right) queue.push(currentNode.right);
-    }
-    return res;
-}
+    while(queue):
+        node = queue.pop(0) #pop(0) = dequeue
+        if node:
+            res.append(node.val)
+            queue.append(node.left)
+            queue.append(node.right)
 ```
+
+- DFS Pseudo Code:
+```Python
+def dfs_postOrder(root, res):
+    if (root):
+        dfs_postOrder(root.left)
+        dfs_postOrder(root.right)
+        res.append(root.val)
+
+dfs_postOrder(root, [])   
+```
+
 
 | Problems   |      Solutions      |  Description |
 |----------|:-------------:|:------|
@@ -165,7 +174,14 @@ for i in range(0, len(val_list)):
     curr = curr.right
 ```
 [938. Range Sum of BST](./solution/938_Range_Sum_of_BST.py)
-- **Learn #1**: 
+- **Learn #1**: Using the property of BST
+```Python
+if node.val < low:
+   queue.append(node.right)
+elif node.val > high:
+   queue.append(node.left)
+```
+
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./solution/1379_Find_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree.py)
 - BFS Implementation in Python: using `pop(0)` for dequeue and `append` for enqueue
 ```Python
