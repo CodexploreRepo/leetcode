@@ -19,6 +19,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [2D Matrix](#2d-matrix)
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
+    - [N-ary Tree - BFS & DFS](#n-ary-tree)
     - [Others](#others)
 - [Resources](#resources)
 - [License](#license)
@@ -163,7 +164,8 @@ for i in range(0, len(val_list)):
     curr.right = TreeNode(val=val)
     curr = curr.right
 ```
-
+[938. Range Sum of BST](./solution/938_Range_Sum_of_BST.py)
+- **Learn #1**: 
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./solution/1379_Find_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree.py)
 - BFS Implementation in Python: using `pop(0)` for dequeue and `append` for enqueue
 ```Python
@@ -177,6 +179,19 @@ while(queue):
         queue.append(node.right)
 ```
 [(Back to top)](#table-of-contents)
+
+### N ary Tree
+[590. N-ary Tree Postorder Traversal](./solution/590_Nary_Tree_Postorder_Traversal.py)
+
+- **Learn #1**: DFS expansion for N-ary tree
+```Python
+def dfs_postOrder(root, result):
+    if (root):
+        for child in root.children:
+            dfs_postOrder(child, result)
+        result.append(root.val)
+```
+
 
 ### Others
 
