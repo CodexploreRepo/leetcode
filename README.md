@@ -20,6 +20,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [N-ary Tree - BFS & DFS](#n-ary-tree)
+    - [Class Design](#class-design)
     - [Others](#others)
 - [Resources](#resources)
 - [License](#license)
@@ -208,6 +209,16 @@ def dfs_postOrder(root, result):
         result.append(root.val)
 ```
 
+### Class Design
+[1603. Design Parking System](./solution/1603_Design_Parking_System.py)
+- **Learn #1**: How to use Hash Table to look up the value
+```Python
+def __init__(self, big: int, medium: int, small: int):
+        self.lots = {3: small, 2: medium, 1: big}
+
+    def addCar(self, carType: int) -> bool:
+        lot = self.lots[carType]
+```
 
 ### Others
 
