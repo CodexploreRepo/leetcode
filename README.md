@@ -10,7 +10,7 @@ This is powered by CodeXplore
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
-- [Primitive Types](#primitive-types)
+- [1. Primitive Types](#1-primitive-types)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -25,7 +25,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Resources](#resources)
 - [License](#license)
 
-# Primitive Types
+# 1. Primitive Types
 ## Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
