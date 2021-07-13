@@ -29,7 +29,8 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 ## 1.1. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
-- `x & 1` : compares LSB of X with 1 (For ex: x=1010 & 0001)
+- `x & 1` : compares LSB of X with 1 (For ex: x=1010, then x & 0001 = 0)
+- `x | 1` : add the LSB of X with 1  (For ex: x=1010, then x | 0001 = 1011)
 ### 1.1.1. Bitwise Example
 - Questions: Write a program to count number of bits set to 1 in a positive integer.
 ```Python
