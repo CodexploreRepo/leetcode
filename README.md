@@ -26,14 +26,21 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [License](#license)
 
 # 1. Primitive Types
-## Bitwise Operation:
+## 1.1. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 - `x & 1` : compares LSB of X with 1 (For ex: x=1010 & 0001)
+### 1.1.1. Bitwise Example
+- Questions: Write a program to count number of bits set to 1 in a positive integer.
+```Python
+num_bits = 0
+while x:
+    num_bits += x & 1 #Compare LSB of X with 1, if LSB = 1, then increase num_bits by 1
+    x >>= 1 #Shift Right x by 1 bit
+```
 
 
-
-### :
+## 1.2. LeetCode Questions:
 - [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
