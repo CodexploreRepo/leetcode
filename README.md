@@ -39,9 +39,11 @@ while x:
     num_bits += x & 1 #Compare LSB of X with 1, if LSB = 1, then increase num_bits by 1
     x >>= 1 #Shift Right x by 1 bit
 ```
+## 1.2. Primitive Type KeyNotes
+- Infinity: `float('inf')` and `float('-inf')`
 
 
-## 1.2. LeetCode Questions:
+## 1.3. LeetCode Questions:
 - [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
