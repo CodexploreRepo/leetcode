@@ -10,7 +10,7 @@ This is powered by CodeXplore
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
-- [Tips and Tricks](#tips-and-tricks)
+- [Primitive Types](#primitive-types)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -25,8 +25,15 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Resources](#resources)
 - [License](#license)
 
-# Tips and Tricks
-### Binary Number
+# Primitive Types
+## Bitwise Operation:
+- `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
+- `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
+- `x & 1` : compares LSB of X with 1 (For ex: x=1010 & 0001)
+
+
+
+### :
 - [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
