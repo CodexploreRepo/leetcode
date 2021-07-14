@@ -31,14 +31,25 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 - `x & 1` : compares LSB of X with 1 (For ex: x=1010, then x & 0001 = 0)
 - `x | 1` : add the LSB of X with 1  (For ex: x=1010, then x | 0001 = 1011)
+- `x ^ 1` : XOR (`0 0 -> 0, 0 1 -> 1, 1 0 -> 1, 1 1 -> 0`)
 ### 1.1.1. Bitwise Example
-- Questions: Write a program to count number of bits set to 1 in a positive integer.
+- Question #1: Write a program to count number of bits set to 1 in a positive integer, say x = 69
 ```Python
 num_bits = 0
 while x:
     num_bits += x & 1 #Compare LSB of X with 1, if LSB = 1, then increase num_bits by 1
     x >>= 1 #Shift Right x by 1 bit
 ```
+- Question #2: Computing Parity of Binary Word (parity = 1 when # of 1s in the word is `odd` (1011), parity = 1 when # of 1s in the word is `even` (1010))
+```Python
+result = 0
+while x:
+    result ^= x & 1 #XOR
+    x >> = 1
+```
+- Explain `result ^= x & 1`
+    - If res is even (0) and x-bit is 1, res evaluates to odd (1).
+    - If res is odd (1) and x-bit is 1, res evaluates to even (0).
 ## 1.2. Primitive Type KeyNotes
 - Infinity: `float('inf')` and `float('-inf')`
 
