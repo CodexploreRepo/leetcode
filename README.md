@@ -11,7 +11,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 - [Table of contents](#table-of-contents)
 - [1. Primitive Types](#1-primitive-types)
-  - [1.1 Bitwise Operation](#1-1-bitwise-operation)
+  - [1.1 Bitwise Operation](#11-bitwise-operation)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
