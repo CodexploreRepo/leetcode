@@ -67,7 +67,7 @@ while x:
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)||[Code](/1_Two_Sum.java)| Using Hash Map |
-| [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)||[Code](./6_Zig_Zag_Conversion.java)| to identify the pattern |
+| [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|`Medium`|[Code](./6_Zig_Zag_Conversion.py)| to identify the pattern |
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)||[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
 | [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)||[Code](./solution/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)||[Code](./solution/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
