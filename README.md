@@ -63,10 +63,11 @@ while x:
         - `num << 1 | head.val` Add (|) next bit to num at least significant position
 
 ## 1.3. Strings and Numbers
-### 1.3.1 LeetCode Questions
+### 1.3.1. String and Number LeetCode Questions
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)||[Code](/1_Two_Sum.java)| Using Hash Map |
+| [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)||[Code](./6_Zig_Zag_Conversion.java)| to identify the pattern |
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)||[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
 | [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)||[Code](./solution/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)||[Code](./solution/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
@@ -75,7 +76,7 @@ while x:
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)||[Code](./solution/1446_Consecutive_Characters.js)|2-pointer approach|
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|`Easy`|[Code](./solution/1539_Kth_Missing_Positive_Number.py)||
 
-### 1.3.2. Tips 
+### 1.3.2. String and Number Tips 
 - [728. Self Dividing Numbers](./solution/728_Self_Dividing_Numbers.py)
     - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
     ```Python
