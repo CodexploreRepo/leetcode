@@ -14,6 +14,8 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
   - [1.1. KeyNotes](#11-keynotes)
   - [1.2. Bitwise Operation](#12-bitwise-operation)
   - [1.3. Strings and Numbers](#13-strings-and-numbers)
+- [2. Arrays](#2-arrays)
+  - [2.1. Keynotes](#21-keynotes)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -109,6 +111,16 @@ Given the array of integers `nums`, you will choose two different indices i and 
             else:
                 dict[num]=1
     ```
+# 2. Arrays
+## 2.1. Keynotes
+
+| Operation  |Complexity|Description|
+|------------|:--------:|-----------|
+|Retrieve       |`O(1)` ||
+|Update         |`O(1)` ||
+|Append         |`O(1)` |- Append (Inserrt to full array) can be handled by `resizing`, i.e: allocating a new array with addtional memory and copying over the entries from the original array. <br> - However, the average time for insertion is constant as `resizing` is very infrequent.|
+|Insert @ ith index|`O(n-i)`| |
+|Delete @ ith index|`O(n-i)`| Delete an element @ ith from an array requires moving all successive elements on over to the left to fill the vacated @ ith|
 # Data Structure
 # Algorithms
 
