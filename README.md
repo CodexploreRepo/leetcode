@@ -11,6 +11,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 - [Table of contents](#table-of-contents)
 - [1. Primitive Types](#1-primitive-types)
+  - [1.1 Bitwise Operation](#1-1-bitwise-operation)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -51,17 +52,18 @@ while x:
 - Explain `result ^= x & 1`
     - If res is even (0) and x-bit is 1, res evaluates to odd (1).
     - If res is odd (1) and x-bit is 1, res evaluates to even (0).
-## 1.2. Primitive Type KeyNotes
-- Infinity: `float('inf')` and `float('-inf')`
-
-
-## 1.3. LeetCode Questions:
+### 1.1.2. LeetCode Questions:
 - [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
         - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
         - `num << 1 | head.val` Add (|) next bit to num at least significant position
-    
+
+## 1.2. KeyNotes
+- Infinity: `float('inf')` and `float('-inf')`
+
+
+
 
 
 # Data Structure
