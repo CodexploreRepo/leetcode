@@ -11,12 +11,13 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 - [Table of contents](#table-of-contents)
 - [1. Primitive Types](#1-primitive-types)
-  - [1.1 Bitwise Operation](#11-bitwise-operation)
+  - [1.1. KeyNotes](#11-keynotes)
+  - [1.2. Bitwise Operation](#12-bitwise-operation)
+  - [1.3. Strings and Numbers](#13-strings-and-numbers)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
-    - [String Array](#string-array)
     - [2D Matrix](#2d-matrix)
     - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -27,14 +28,16 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [License](#license)
 
 # 1. Primitive Types
-## 1.1. Bitwise Operation:
+## 1.1. KeyNotes
+- Infinity: `float('inf')` and `float('-inf')`
+## 1.2. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 - `x & 1` : compares LSB of X with 1 (For ex: x=1010, then `x & 0001` = 0)
 - `x | 1` : add the LSB of X with 1  (For ex: x=1010, then `x | 0001` = 1011)
 - :star: `x ^ 1` : XOR (`0 0 -> 0, 0 1 -> 1, 1 0 -> 1, 1 1 -> 0`)
 - :star: `x&(x-1)`: to erase lowest set bit of x. (For ex: x=00101100, x-1= 00101011 then `x&(x-1)`=00101000)
-### 1.1.1. Bitwise Example
+### 1.2.1. Bitwise Example
 - Question #1: Write a program to count number of bits set to 1 in a positive integer, say x = 69
 ```Python
 num_bits = 0
@@ -52,44 +55,27 @@ while x:
 - Explain `result ^= x & 1`
     - If res is even (0) and x-bit is 1, res evaluates to odd (1).
     - If res is odd (1) and x-bit is 1, res evaluates to even (0).
-### 1.1.2. LeetCode Questions:
+### 1.2.2. LeetCode Questions:
 - [Convert Binary Number to Integer](./solution/1290_convert_Binary_to_Integer.js) For ex: LinkedList of Binary: 1 -> 0 -> 1 = 5 in decimal
     - Tips: Bitwise operation 
         -  initialise an integer variable num to 0
         - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
         - `num << 1 | head.val` Add (|) next bit to num at least significant position
 
-## 1.2. KeyNotes
-- Infinity: `float('inf')` and `float('-inf')`
+## 1.3. Strings and Numbers
+### 1.3.1 LeetCode Questions
+| Problems   |Difficulty|      Solutions       |  Description |
+|------------|:--------:|:--------------------:|:------------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum/)||[Code](/1_Two_Sum.java)| Using Hash Map |
+|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)||[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
+| [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)||[Code](./solution/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
+| [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)||[Code](./solution/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
+| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)| | [Code](./solution/441_Arranging_Coins.py) | Using Mathematics Formula |
+| [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)||[Code](./solution/454_4Sum_II.java)| Using Hash Map |
+|[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)||[Code](./solution/1446_Consecutive_Characters.js)|2-pointer approach|
+| [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|`Easy`|[Code](./solution/1539_Kth_Missing_Positive_Number.py)||
 
-
-
-
-
-# Data Structure
-# Algorithms
-
-### Searching
-| Algo Name   |      Note      | 
-|----------|:-------------:|
-|[Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js)| Shortest Path; Closer Nodes|
-
-
-# LeetCode Solutions
-### String Array
-
-| Problems   |      Solutions      |  Description |
-|----------|:-------------:|:------|
-|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
-| [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Code](./solution/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
-|[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)|[Code](./solution/1446_Consecutive_Characters.js)|2-pointer approach|
-| [1. Two Sum](https://leetcode.com/problems/two-sum/)|[Code](/1_Two_Sum.java)| Using Hash Map |
-| [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)|[Code](./solution/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
-| [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)|  [Code](./solution/441_Arranging_Coins.py) | Using Mathematics Formula |
-| [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)|[Code](./solution/454_4Sum_II.java)| Using Hash Map |
-| [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|  [Code](./solution/1290_convert_Binary_to_Integer.js) | Use Bit Shift |
-| [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Code](./solution/1539_Kth_Missing_Positive_Number.py)||
-
+### 1.3.2. Tips 
 - [728. Self Dividing Numbers](./solution/728_Self_Dividing_Numbers.py)
     - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
     ```Python
@@ -98,12 +84,9 @@ while x:
        #Do somthing here with each digit d
        n //=10
     ```
-- [1299. Replace Elements with Greatest Element on Right Side](./solution/1299_Replace_Elements_with_Greatest_Element_on_Right_Side.py)
-    - **Learn #1**: Look at the problem from Right to Left
-    ```Python
-    Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
-    Optimal  : arr = [17,18,5,4,6,1] > [, , , , , , -1] curMax=1 > [, , , , , 1,-1] curMax=6
-    ```
+- [1464. Maximum Product of Two Elements in an Array](./solution/1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
+Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`.
+    - **Learn**: Find the 2 largest elements in nums
 
 - [1304. Find N Unique Integers Sum up to Zero](./solution/1304_Find_N_Unique_Integers_Sum_up_to_Zero.py)
     - **Learn #1**: Do not be misleading by Examples, find the general rule
@@ -114,9 +97,7 @@ while x:
     - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
 - [1436. Destination City](./solution/1436_Destination_City.py)
     - **Learn**: using Hash Table to check for existing of elements instead of looping through 
-- [1464. Maximum Product of Two Elements in an Array](./solution/1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
-Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`.
-    - **Learn**: Find the 2 largest elements in nums
+
 - [1748. Sum of Unique Elements](./solution/1748_Sum_of_Unique_Elements.py)
     - **Learn**: Using Hash Table to calculate Unique Element (like below code), we can use `collections.Counter(nums)`
     ```Python
@@ -126,6 +107,24 @@ Given the array of integers `nums`, you will choose two different indices i and 
             else:
                 dict[num]=1
     ```
+# Data Structure
+# Algorithms
+
+### Searching
+| Algo Name   |      Note      | 
+|----------|:-------------:|
+|[Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js)| Shortest Path; Closer Nodes|
+
+
+# LeetCode Solutions
+
+- [1299. Replace Elements with Greatest Element on Right Side](./solution/1299_Replace_Elements_with_Greatest_Element_on_Right_Side.py)
+    - **Learn #1**: Look at the problem from Right to Left
+    ```Python
+    Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
+    Optimal  : arr = [17,18,5,4,6,1] > [, , , , , , -1] curMax=1 > [, , , , , 1,-1] curMax=6
+    ```
+
 ### 2D Matrix
 - [1351. Count Negative Numbers in a Sorted Matrix](./solution/1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
     - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase 
