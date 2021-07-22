@@ -30,6 +30,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 # 1. Primitive Types
 ## 1.1. KeyNotes
 - Infinity: `float('inf')` and `float('-inf')`
+- Mathematics: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
 ## 1.2. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
