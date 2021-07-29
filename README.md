@@ -16,6 +16,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
   - [1.3. Strings and Numbers](#13-strings-and-numbers)
 - [2. Arrays](#2-arrays)
   - [2.1. Keynotes](#21-keynotes)
+  - [2.2. Array Problems](#22-array-problems)
 - [Data Structure](#data-structure)
 - [Algorithms](#algorithms)
     - [Searching](#searching)
@@ -79,7 +80,7 @@ while x:
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)||[Code](./solution/1446_Consecutive_Characters.js)|2-pointer approach|
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|`Easy`|[Code](./solution/1539_Kth_Missing_Positive_Number.py)||
 
-### 1.3.2. String and Number Tips 
+### 1.3.2. String and Number Problems 
 - [728. Self Dividing Numbers](./solution/728_Self_Dividing_Numbers.py)
     - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
     ```Python
@@ -88,10 +89,6 @@ while x:
        #Do somthing here with each digit d
        n //=10
     ```
-- [1464. Maximum Product of Two Elements in an Array](./solution/1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
-Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`.
-    - **Learn**: Find the 2 largest elements in nums
-
 - [1304. Find N Unique Integers Sum up to Zero](./solution/1304_Find_N_Unique_Integers_Sum_up_to_Zero.py)
     - **Learn #1**: Do not be misleading by Examples, find the general rule
     - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
@@ -101,7 +98,9 @@ Given the array of integers `nums`, you will choose two different indices i and 
     - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
 - [1436. Destination City](./solution/1436_Destination_City.py)
     - **Learn**: using Hash Table to check for existing of elements instead of looping through 
-
+- [1464. Maximum Product of Two Elements in an Array](./solution/1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
+Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`.
+    - **Learn**: Find the 2 largest elements in nums
 - [1748. Sum of Unique Elements](./solution/1748_Sum_of_Unique_Elements.py)
     - **Learn**: Using Hash Table to calculate Unique Element (like below code), we can use `collections.Counter(nums)`
     ```Python
@@ -113,14 +112,28 @@ Given the array of integers `nums`, you will choose two different indices i and 
     ```
 # 2. Arrays
 ## 2.1. Keynotes
+- To insert First Element to Array: `list.insert(0,new_element)` (Exercise: 66)
 
 | Operation  |Complexity|Description|
 |------------|:--------:|-----------|
 |Retrieve       |`O(1)` ||
 |Update         |`O(1)` ||
-|Append         |`O(1)` |- Append (Inserrt to full array) can be handled by `resizing`, i.e: allocating a new array with addtional memory and copying over the entries from the original array. <br> - However, the average time for insertion is constant as `resizing` is very infrequent.|
-|Insert @ ith index|`O(n-i)`| |
+|Append         |`O(1)` |Append (Inserrt to full array) can be handled by `resizing`, i.e: allocating a new array with addtional memory and copying over the entries from the original array.<br>However, the average time for insertion is constant as `resizing` is very infrequent.|
+|Insert @ ith index|`O(n-i)`| Use to insert First Element to array `list.insert(0,new_element)` |
 |Delete @ ith index|`O(n-i)`| Delete an element @ ith from an array requires moving all successive elements on over to the left to fill the vacated @ ith|
+
+## 2.2. Array Problems
+
+- [75. Sort Colors (Dutch National Flag Problem)](./solution/75_Sort_Colors.py)
+    - **Learn #1**: to sort an array with (3 type of element) in Time Complexity O(n), use `Dutch National Flag` algo.
+      - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
+      - First iteration: go Left to right, move `element` < `pivot` to left
+      - Second iteration: go Right to left, move `element` > `pivot` to right, stop when meeting `element` < `pivot`.
+
+| Problems   |Difficulty|      Solutions       |  Description |
+|------------|:--------:|:--------------------:|:------------|
+| [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
+
 # Data Structure
 # Algorithms
 
