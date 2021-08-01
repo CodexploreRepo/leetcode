@@ -32,8 +32,11 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 # 1. Primitive Types
 ## 1.1. KeyNotes
-- Infinity: `float('inf')` and `float('-inf')`
-- Math Operator: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
+- [Number] Infinity: `float('inf')` and `float('-inf')`
+- [Number] Math Operator: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
+- [Number > String] 9 to "9": `char(ord('0') + 9)`
+- [String > Number] "9" to 9: `ord('9') - ord('0') = 9`, for s="123" to 123: `res = res*10 + ord(s[i]) - ord('0')`
+- [Set] Create a set of digits `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']` => `nums = set('0123456789')`
 ## 1.2. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
@@ -70,8 +73,9 @@ while x:
 ### 1.3.1. String and Number LeetCode Questions
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
-| [1. Two Sum](https://leetcode.com/problems/two-sum/)||[Code](./solution/1_Two_Sum.java)| Using Hash Map |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/)|`Easy`|[Code](./solution/1_Two_Sum.java)| Using Hash Map |
 | [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|`Medium`|[Code](./solution/6_Zig_Zag_Conversion.py)| to identify the pattern |
+| [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|`Medium`| [Code](./solution/8_String_to_Integer.py) | to solve one by one, starting with `whitespace`, then `-/+` then `numbers` by iterating through the string with O(n)|
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)||[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
 | [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum/)||[Code](./solution/167_Two_Sum_II_Input_array_is_sorted.java)| Using 2 pointers |
 | [344. Reverse String](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)||[Code](./solution/344_Reverse_String.py) | 2-pointer approach to reverse the string without creating extra memory (i.e: Space Complexity O(1)|
