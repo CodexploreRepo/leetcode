@@ -36,6 +36,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Number] Math Operator: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
 - [Number > String] 9 to "9": `char(ord('0') + 9)`
 - [String > Number] "9" to 9: `ord('9') - ord('0') = 9`, for s="123" to 123: `res = res*10 + ord(s[i]) - ord('0')`
+- [String] Palindromic `all(s[i] == s[~i] for i in range(len(s//2))` where `s[~i] = s[-(i+1)]`
 - [Set] Create a set of digits `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']` => `nums = set('0123456789')`
 ## 1.2. Bitwise Operation:
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
