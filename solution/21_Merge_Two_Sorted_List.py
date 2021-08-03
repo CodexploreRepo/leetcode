@@ -7,6 +7,11 @@ class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         #dummy_head to keep track the head of the result linked list
         #tail to keep track the end of the result linked list
+        
+        """
+        Time Complexity: O(n+m)
+        Space: O(1) as re-use existing nodes
+        """
         dummy_head = tail = ListNode()
         while (l1 and l2):
             if l1.val < l2.val:
