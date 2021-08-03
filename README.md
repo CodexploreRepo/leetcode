@@ -140,7 +140,7 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 # 3. Linked List
 ## 3.1. Keynotes
-- Create a linked list with `dummy_head` and `tail`: `dummy_head = tail = ListNode()` using `tail` to move (Exercise: 66)
+- Create a linked list with `dummy_head` and `tail`: `dummy_head = tail = ListNode()` using `tail` to move (Exercise: 21)
 
 ## 3.2. Linked List Problems
 
