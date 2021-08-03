@@ -10,7 +10,7 @@ This is powered by CodeXplore
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
-- [Part A. Data Structure](#part-a-data-structure)
+- [Part A: Data Structure](#part-a-data-structure)
 - [1. Primitive Types](#1-primitive-types)
   - [1.1. KeyNotes](#11-keynotes)
   - [1.2. Bitwise Operation](#12-bitwise-operation)
@@ -31,7 +31,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Resources](#resources)
 - [License](#license)
 
-# Part A. Data Structure
+# Part A: Data Structure
 # 1. Primitive Types
 ## 1.1. KeyNotes
 - [Number] Infinity: `float('inf')` and `float('-inf')`
