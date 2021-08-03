@@ -4,11 +4,6 @@
 This is powered by CodeXplore 
 
 # Table of contents
-
-<!-- After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
-
-Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
-
 - [Table of contents](#table-of-contents)
 - [Part A: Data Structure](#part-a-data-structure)
 - [1. Primitive Types](#1-primitive-types)
@@ -20,6 +15,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
   - [2.2. Array Problems](#22-array-problems)
 - [3. Linked List](#3-linked-list)
   - [3.1. Keynotes](#31-keynotes) 
+  - [3.2. Linked List Problems](#32-linked-list-problems)
 - [Part B: Algorithms](#part-b-algorithms)
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
@@ -144,6 +140,14 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 # 3. Linked List
 ## 3.1. Keynotes
+- Create a linked list with `dummy_head` and `tail`: `dummy_head = tail = ListNode()` using `tail` to move (Exercise: 66)
+
+## 3.2. Linked List Problems
+
+| Problems   | Difficulty |     Solutions      |  Description |
+|----------  |:----------:|:------------------:|:-------------|
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
+
 
 # Part B: Algorithms
 
@@ -183,9 +187,6 @@ Given the array of integers `nums`, you will choose two different indices i and 
     ```
 
 ### Linked List
-| Problems   |      Solutions      |  Description |
-|----------|:-------------:|:------|
-|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers: Head & Tail|
 
 
 ### Binary Tree
