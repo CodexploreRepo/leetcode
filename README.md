@@ -18,8 +18,9 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [2. Arrays](#2-arrays)
   - [2.1. Keynotes](#21-keynotes)
   - [2.2. Array Problems](#22-array-problems)
-- [Data Structure](#data-structure)
-- [Algorithms](#algorithms)
+- [3. Linked List](#3-linked-list)
+  - [3.1. Keynotes](#31-keynotes) 
+- [Part B: Algorithms](#part-b-algorithms)
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [2D Matrix](#2d-matrix)
@@ -141,8 +142,10 @@ Given the array of integers `nums`, you will choose two different indices i and 
 |------------|:--------:|:--------------------:|:------------|
 | [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
 
+# 3. Linked List
+## 3.1. Keynotes
 
-# Algorithms
+# Part B: Algorithms
 
 ### Searching
 | Algo Name   |      Note      | 
