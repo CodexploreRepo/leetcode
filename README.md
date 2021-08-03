@@ -10,6 +10,7 @@ This is powered by CodeXplore
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Table of contents](#table-of-contents)
+- [Part A. Data Structure](#part-a-data-structure)
 - [1. Primitive Types](#1-primitive-types)
   - [1.1. KeyNotes](#11-keynotes)
   - [1.2. Bitwise Operation](#12-bitwise-operation)
@@ -30,6 +31,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Resources](#resources)
 - [License](#license)
 
+# Part A. Data Structure
 # 1. Primitive Types
 ## 1.1. KeyNotes
 - [Number] Infinity: `float('inf')` and `float('-inf')`
@@ -139,7 +141,7 @@ Given the array of integers `nums`, you will choose two different indices i and 
 |------------|:--------:|:--------------------:|:------------|
 | [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
 
-# Data Structure
+
 # Algorithms
 
 ### Searching
