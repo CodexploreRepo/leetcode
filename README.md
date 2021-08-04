@@ -150,12 +150,13 @@ Given the array of integers `nums`, you will choose two different indices i and 
 # 3. Linked List
 ## 3.1. Keynotes
 - Create a linked list with `dummy_head` and `tail`: `dummy_head = tail = ListNode()` using `tail` to move (Exercise: 21)
-
+- Create a `dummy_head = None` for the case do NOT require extra node.
 ## 3.2. Linked List Problems
 
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)| Use `temp` to store ref of .next, then keep append each node to the right (i.e: .next) of `dummy_head = None`|
 
 
 # Part B: Algorithms
