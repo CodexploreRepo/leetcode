@@ -136,16 +136,41 @@ Given the array of integers `nums`, you will choose two different indices i and 
 |Delete @ ith index|`O(n-i)`| Delete an element @ ith from an array requires moving all successive elements on over to the left to fill the vacated @ ith|
 
 ## 2.2. Array Problems
+### 2.2.1. 1D Array
 
+| Problems   |Difficulty|      Solutions       |  Description |
+|------------|:--------:|:--------------------:|:------------|
+| [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
 - [75. Sort Colors (Dutch National Flag Problem)](./solution/75_Sort_Colors.py)
     - **Learn #1**: to sort an array with (3 type of element) in Time Complexity O(n), use `Dutch National Flag` algo.
       - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
       - First iteration: go Left to right, move `element` < `pivot` to left
       - Second iteration: go Right to left, move `element` > `pivot` to right, stop when meeting `element` < `pivot`.
+- [1299. Replace Elements with Greatest Element on Right Side](./solution/1299_Replace_Elements_with_Greatest_Element_on_Right_Side.py)
+    - **Learn #1**: Look at the problem from Right to Left
+    ```Python
+    Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
+    Optimal  : arr = [17,18,5,4,6,1] > [, , , , , , -1] curMax=1 > [, , , , , 1,-1] curMax=6
+    ```
 
-| Problems   |Difficulty|      Solutions       |  Description |
-|------------|:--------:|:--------------------:|:------------|
-| [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
+### 2.2.2. 2D Matrix
+- [1351. Count Negative Numbers in a Sorted Matrix](./solution/1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
+    - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase 
+    - **Learn #2**: `Q(m*log(n))` Sorted Array => Binary Search Tree: to search to position of First Negative Number in the Array
+    ```Python
+     def binarySearch(row):
+            start = 0
+            end = len(row) - 1
+            while (start <= end):
+                # Mid post 
+                mid = start + (end - start)//2
+                if (row[mid] < 0):
+                    end = mid - 1
+                else:
+                    start = mid + 1
+            return len(row) - start
+    ```
+
 
 # 3. Linked List
 ## 3.1. Keynotes
@@ -156,7 +181,7 @@ Given the array of integers `nums`, you will choose two different indices i and 
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
-|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)| Use `temp` to store ref of .next, then keep append each node to the right (i.e: .next) of `dummy_head = None`|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)| Use `temp` to store **current node's .next**, then keep append each node to the right (i.e: .next) of `dummy_head = None`|
 
 
 # Part B: Algorithms
@@ -169,34 +194,8 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 # LeetCode Solutions
 
-- [1299. Replace Elements with Greatest Element on Right Side](./solution/1299_Replace_Elements_with_Greatest_Element_on_Right_Side.py)
-    - **Learn #1**: Look at the problem from Right to Left
-    ```Python
-    Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
-    Optimal  : arr = [17,18,5,4,6,1] > [, , , , , , -1] curMax=1 > [, , , , , 1,-1] curMax=6
-    ```
 
-### 2D Matrix
-- [1351. Count Negative Numbers in a Sorted Matrix](./solution/1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
-    - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase 
-    - **Learn #2**: `Q(m*log(n))` Sorted Array => Binary Search Tree: to search to position of First Negative Number in the Array
-    ```Python
-     def binarySearch(row):
-            start = 0
-            end = len(row) - 1
-            
-            while (start <= end):
-                # Mid post 
-                mid = start + (end - start)//2
-                if (row[mid] < 0):
-                    end = mid - 1
-                else:
-                    start = mid + 1
-            
-            return len(row) - start
-    ```
 
-### Linked List
 
 
 ### Binary Tree
