@@ -19,8 +19,6 @@ This is powered by CodeXplore
 - [Part B: Algorithms](#part-b-algorithms)
     - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
-    - [2D Matrix](#2d-matrix)
-    - [Linked List](#linked-list)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [N-ary Tree - BFS & DFS](#n-ary-tree)
     - [Class Design](#class-design)
@@ -171,7 +169,6 @@ Given the array of integers `nums`, you will choose two different indices i and 
             return len(row) - start
     ```
 
-
 # 3. Linked List
 ## 3.1. Keynotes
 - Create a linked list with `dummy_head` and `tail`: `dummy_head = tail = ListNode()` using `tail` to move (Exercise: 21)
@@ -193,10 +190,6 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 
 # LeetCode Solutions
-
-
-
-
 
 ### Binary Tree
 #### General Tips for Tree:
