@@ -178,7 +178,8 @@ Given the array of integers `nums`, you will choose two different indices i and 
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
-|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)| Use `temp` to store **current node's .next**, then keep append each node to the right (i.e: .next) of `dummy_head = None`|
+|[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|`Medium`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)||
 
 
 # Part B: Algorithms
