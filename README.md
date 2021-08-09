@@ -46,7 +46,8 @@ This is powered by CodeXplore
 - [Set] Create a set of digits `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']` => `nums = set('0123456789')`
 
 ### External Library:
--  `dir()`: See all the names in `module` using the built-in function  **dir()**
+-  `help()`: to understand the function usage. For ex: `help(math.log)`
+-  `dir()`: See all the names in `module` or to understand an un-known object, using the built-in function  **dir()**
 ```Python
 import math
 print(dir(math))
