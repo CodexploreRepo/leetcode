@@ -190,6 +190,8 @@ Given the array of integers `nums`, you will choose two different indices i and 
 |----------  |:----------:|:------------------:|:-------------|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
 |[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|`Medium`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
+|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|`Easy`|[Code](./solution/141_Linked_List_Cycle.py)| Use 2 pointers slow fast to traverse, if slow meets fast, meaning it is a cycle linked list|
+|[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|`Medium`|[Code](./solution/)| NA|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)||
 
 
