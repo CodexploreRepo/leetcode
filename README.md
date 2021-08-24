@@ -17,7 +17,8 @@ This is powered by CodeXplore
   - [3.1. Keynotes](#31-keynotes) 
   - [3.2. Linked List Problems](#32-linked-list-problems)
 - [Part B: Algorithms](#part-b-algorithms)
-    - [Searching](#searching)
+- [1. Recursion](#1-recursion)
+- [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
     - [N-ary Tree - BFS & DFS](#n-ary-tree)
@@ -196,6 +197,10 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 
 # Part B: Algorithms
+# 1. Recursion
+- Example 1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
+  - fib(1) = fib(2) = 1
+  - fib(n) = fib(n-1) + fib(n-2)
 
 ### Searching
 | Algo Name   |      Note      | 
