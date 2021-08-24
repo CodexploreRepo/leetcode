@@ -198,9 +198,9 @@ Given the array of integers `nums`, you will choose two different indices i and 
 
 # Part B: Algorithms
 # 1. Recursion
-- Example 1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
-  - fib(1) = fib(2) = 1
-  - fib(n) = fib(n-1) + fib(n-2)
+- Ex1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
+  - `fib(1) = fib(2) = 1`
+  - `fib(n) = fib(n-1) + fib(n-2)`
 
 ### Searching
 | Algo Name   |      Note      | 
