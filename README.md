@@ -30,6 +30,9 @@ This is powered by CodeXplore
 # Part A: Data Structure
 # 1. Primitive Types
 ## 1.1. KeyNotes
+* 4 Bascis Data Types: String, Integer, Float and Boolean
+* Logical Variable: `not`, `and`, `or`
+
 
 | Operator     | Name           | Description                                            |
 |--------------|----------------|--------------------------------------------------------|
@@ -38,8 +41,7 @@ This is powered by CodeXplore
 | ``a % b``    | Modulus        | Integer remainder after division of ``a`` by ``b``     |
 | ``a ** b``   | Exponentiation | ``a`` raised to the power of ``b``                     |
 
-
-- [Number] Infinity: `float('inf')` and `float('-inf')`
+- [Number] **Infinity**: `float('inf')` and `float('-inf')`
 - [Number] Math Operator: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
 - [Number > String] 9 to "9": `char(ord('0') + 9)`
 - [String > Number] "9" to 9: `ord('9') - ord('0') = 9`, for s="123" to 123: `res = res*10 + ord(s[i]) - ord('0')`
@@ -58,6 +60,7 @@ print(dir(math))
 
 ## 1.2. Bitwise Operation:
 - `n-bit`binary numbers can re-present 2^(n) distinct integers. For example: 4-bit binary numbers can represent 16 distinct integers. 
+- 
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 - `x & 1` : compares LSB of X with 1 (For ex: x=1010, then `x & 0001` = 0)
@@ -90,6 +93,25 @@ while x:
         - `num << 1 | head.val` Add (|) next bit to num at least significant position
 
 ## 1.3. Strings and Numbers
+- `.find()`: find the starting index of the first occurrence of a substring as specified
+<img width="845" alt="Screenshot 2021-08-25 at 22 11 40" src="https://user-images.githubusercontent.com/64508435/130806533-e176d08a-168c-4b26-92d2-6b0dacb1aa4a.png">
+
+```python
+s = 'machine learning'
+
+s.find('n') #return = 5 > find the first occurance 'n'
+s.find('n', 6) #return = 12 >  find the occurance from 6th index
+s.find('n', 6, 10) #return = -1 > represents not found, not a negative index here
+```
+- `.rfind()`: find the starting index in the reverse direction
+```Python
+
+s.rfind('n') #return = 5 > find the first occurance 'n'
+s.rfind('n', 15) #return = -1 >  If a second argument is provided, it is where the search ends in the reverse direction, inclusive of this index itself
+s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index here
+```
+
+
 ### 1.3.1. String and Number LeetCode Questions
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
@@ -104,7 +126,6 @@ while x:
 |[1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)||[Code](./solution/1446_Consecutive_Characters.js)|2-pointer approach|
 | [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|`Easy`|[Code](./solution/1539_Kth_Missing_Positive_Number.py)||
 
-### 1.3.2. String and Number Problems 
 - [728. Self Dividing Numbers](./solution/728_Self_Dividing_Numbers.py)
     - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
     ```Python
