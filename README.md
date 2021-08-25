@@ -165,7 +165,24 @@ Given the array of integers `nums`, you will choose two different indices i and 
     ```
 # 2. Arrays
 ## 2.1. Keynotes
+- To reverse List: `list[::-1]`
+- To sort a list: `list.sort(reverse = True)`
 - To insert First Element to Array: `list.insert(0,new_element)` (Exercise: 66)
+- To insert @ Tail: `list.append(element)`
+- To insert Many @ Tail: `list.append([1,2,3])`
+- To remove:
+```Python
+l = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47, 49]
+
+#.remove(): remove a specific value
+# l.remove(4) # error if remove 4 as 4 not in l
+l.remove(9)   # l = [1, 2, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47, 49]
+
+#.pop(): remove at an index and return
+l.pop()  # return 49 and l = [1, 2, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+l.pop(1) # return 2 and  l = [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47] 
+```
+
 
 | Operation  |Complexity|Description|
 |------------|:--------:|-----------|
