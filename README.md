@@ -57,6 +57,7 @@ print(dir(math))
 ```
 
 ## 1.2. Bitwise Operation:
+- `n-bit`binary numbers can re-present 2^(n) distinct integers. For example: 4-bit binary numbers can represent 16 distinct integers. 
 - `x << y`: x is *Left* shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
 - `x >> y`: x is *Right* shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 - `x & 1` : compares LSB of X with 1 (For ex: x=1010, then `x & 0001` = 0)
