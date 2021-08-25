@@ -93,6 +93,7 @@ while x:
         - `num << 1 | head.val` Add (|) next bit to num at least significant position
 
 ## 1.3. Strings and Numbers
+#### 1.3.1. find() and rfind()
 - `.find()`: find the starting index of the first occurrence of a substring as specified
 <img width="845" alt="Screenshot 2021-08-25 at 22 11 40" src="https://user-images.githubusercontent.com/64508435/130806533-e176d08a-168c-4b26-92d2-6b0dacb1aa4a.png">
 
@@ -110,9 +111,16 @@ s.rfind('n') #return = 5 > find the first occurance 'n'
 s.rfind('n', 15) #return = -1 >  If a second argument is provided, it is where the search ends in the reverse direction, inclusive of this index itself
 s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index here
 ```
+### String Format
+- `{?:format_specs}`: format the ?th parameter according to the specs
+- `format_specs: ^5d`:   5 decimal places & centered
 
+```Python
+print('{0:s} is approximately {1:^5d}/{2:^5d} = {3:.6f}'.format('pi', 355, 113, 3.1415926))
+#pi is approximately  355 / 113  = 3.141593
+```
 
-### 1.3.1. String and Number LeetCode Questions
+### 1.3.3. String and Number LeetCode Questions
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)|`Easy`|[Code](./solution/1_Two_Sum.java)| Using Hash Map |
