@@ -16,6 +16,8 @@ This is powered by CodeXplore
 - [3. Linked List](#3-linked-list)
   - [3.1. Keynotes](#31-keynotes) 
   - [3.2. Linked List Problems](#32-linked-list-problems)
+- [4. Hash Map](#4-hash-map)
+  - [4.1. Keynotes](#41-keynotes)  
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
 - [Searching](#searching)
@@ -181,6 +183,9 @@ l.remove(9)   # l = [1, 2, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 
 #.pop(): remove at an index and return
 l.pop()  # return 49 and l = [1, 2, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 l.pop(1) # return 2 and  l = [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41, 43, 47] 
+
+#.clear(): remove all
+l.clear # l = []
 ```
 
 
@@ -242,6 +247,21 @@ l.pop(1) # return 2 and  l = [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41
 |[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|`Medium`|[Code](./solution/142_Linked_List_Cycle_II.py)| 	:star: **Good Algo to do** Need to calculate the distance to reach |
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)||
 
+# 4. Hash Map
+## 4.1. Keynotes
+- `len(d)`: return numbers of items in dictionary
+- `d[key]` or `d.get(key, default_value)`: return corresponding value with specific key, return *default_value* when key is not found
+- `in` or `not in`: **membership operators** 
+- `d.pop(key)` or `del d[key]`: remove an item from the dictionary 
+To access keys, values, and items
+- `d.keys()` return the set of all keys in dictionary d
+- `d.values()` return the set of all values in dictionary d
+- `d.items()` return the set of all items (pair of keys and values) in dictionary d
+```Python
+#to access both keys and values
+for k, v in d.items():
+    print(k, v)
+```
 
 # Part B: Algorithms
 # 1. Recursion
