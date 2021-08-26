@@ -187,7 +187,14 @@ l.pop(1) # return 2 and  l = [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 29, 31, 37, 41
 #.clear(): remove all
 l.clear # l = []
 ```
-
+- To iterate both index and value in List: `enumerate`
+```Python
+for index, value in enumerate(arr):
+  print(index, value)
+0 a
+1 b
+2 c
+```
 
 | Operation  |Complexity|Description|
 |------------|:--------:|-----------|
