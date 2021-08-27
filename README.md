@@ -272,9 +272,10 @@ for k, v in d.items():
 
 # Part B: Algorithms
 # 1. Recursion
-- Ex1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
-  - `fib(1) = fib(2) = 1`
-  - `fib(n) = fib(n-1) + fib(n-2)`
+- **Key Points**: Change Large Input &#8594; Smaller Input
+  - Ex1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
+    - `fib(1) = fib(2) = 1`
+    - `fib(n) = fib(n-1) + fib(n-2)`
 
 ### Searching
 | Algo Name   |      Note      | 
