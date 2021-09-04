@@ -34,7 +34,7 @@ This is powered by CodeXplore
 ## 1.1. KeyNotes
 * 4 Bascis Data Types: String, Integer, Float and Boolean
 * Logical Variable: `not`, `and`, `or`
-
+* Arithmetic (int, float) table:
 
 | Operator     | Name           | Description                                            |
 |--------------|----------------|--------------------------------------------------------|
