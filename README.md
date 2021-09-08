@@ -114,13 +114,7 @@ s.rfind('n', 15) #return = -1 >  If a second argument is provided, it is where t
 s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index here
 ```
 ### String Format
-- `{?:format_specs}`: format the ?th parameter according to the specs
-- `format_specs: ^5d`:   5 decimal places & centered
-
-```Python
-print('{0:s} is approximately {1:^5d}/{2:^5d} = {3:.6f}'.format('pi', 355, 113, 3.1415926))
-#pi is approximately  355 / 113  = 3.141593
-```
+- Padding 0: For example, convert integer **month = 2 to "02"**: f"{month:02d}"
 
 ### 1.3.3. String and Number LeetCode Questions
 | Problems   |Difficulty|      Solutions       |  Description |
