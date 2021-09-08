@@ -42,7 +42,12 @@ This is powered by CodeXplore
 | ``a // b``   | Floor division | Quotient of ``a`` and ``b``, removing fractional parts |
 | ``a % b``    | Modulus        | Integer remainder after division of ``a`` by ``b``     |
 | ``a ** b``   | Exponentiation | ``a`` raised to the power of ``b``                     |
-
+* Membership Operators: `in` and `not in`
+* Identify Operators: `is` and `is not` to identify if 2 variables are same class
+```Python
+x =5
+type(x) is int #True
+```
 - [Number] **Infinity**: `float('inf')` and `float('-inf')`
 - [Number] Math Operator: `%10` modulus 10 to extract last digit in a number, `//10` to remove the last digit in a number
 - [Number > String] 9 to "9": `char(ord('0') + 9)`
