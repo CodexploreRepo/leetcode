@@ -307,7 +307,7 @@ dfs_postOrder(root, [])
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |98. Validate Binary Search Tree |[Code](./solution/98_Validate_Binary_Search_Tree.py)| `Medium`|Recursion: check one by one node to ensure that low < node.val < hight. Why low & high ? because we need to ensure the left and right child to be within the range|
-|101. Same Tree |[Code](./solution/100_Same_Tree.py)| `Easy`|Recursion: Compare 2 root, then recusively compare both left with left and right with right sub-tree|
+|100. Same Tree |[Code](./solution/100_Same_Tree.py)| `Easy`|Recursion: Compare 2 root, then recusively compare both left with left and right with right sub-tree|
 |101. Symmetric Tree |[Code](./solution/101_Symmetric_Tree.py)| `Easy`|Recursion: Call a recursive function on left and right Sub-trees|
 |104. Maximum Depth of Binary Tree|[Code](./solution/104_Maximum_Depth_of_Binary_Tree.java)| | DFS|
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/)|[Code](./solution/107_Binary_Tree_Level_Order_Traversal_II.py)| | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
