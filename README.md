@@ -275,10 +275,7 @@ for k, v in d.items():
 - **Learn #1**: Search Types
     -  BFS : While ? Because using Recursion costs additional Space Complexity due to Recusive call in Stack
     -  DFS : Recursion
-- **Learn #2**: Traversal Type
-    - Pre-Order: Root - Left - Right
-    - In-Order : Left - Root - Right
-    - Post-Order: Left - Right - Root
+
 - BFS Pseudo Code:
 ```Python
 def bfs(root):
