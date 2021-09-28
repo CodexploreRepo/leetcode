@@ -20,6 +20,7 @@ This is powered by CodeXplore
   - [4.1. Keynotes](#41-keynotes)  
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
+- [2. Dynamic Programming](#2-dynamic-programming)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -262,6 +263,12 @@ for k, v in d.items():
   - Ex1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
     - `fib(1) = fib(2) = 1`
     - `fib(n) = fib(n-1) + fib(n-2)`
+
+## 2. Dynamic Programming
+
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2)|
 
 ### Searching
 | Algo Name   |      Note      | 
