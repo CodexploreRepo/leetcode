@@ -268,7 +268,7 @@ for k, v in d.items():
 
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
-|70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2)|
+|70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
 
 ### Searching
 | Algo Name   |      Note      | 
