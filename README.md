@@ -266,7 +266,14 @@ for k, v in d.items():
     - `fib(n) = fib(n-1) + fib(n-2)`
 
 ## 2. Dynamic Programming
-
+- **Key Points**: Cache `memo` can be passed into the function as an input param
+```Python
+    def climbStairs(self, n: int, memo = {1: 1, 2:2}) -> int:
+        if n not in memo:
+            #T(n) = T(n-1) + T(n-2)
+            memo[n] = self.climbStairs(n-1, memo) + self.climbStairs(n-2, memo) 
+        return memo[n]
+```
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
