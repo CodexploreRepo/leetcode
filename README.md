@@ -266,6 +266,7 @@ for k, v in d.items():
     - `fib(n) = fib(n-1) + fib(n-2)`
 
 ## 2. Dynamic Programming
+- **Key Points**: DP can be done either by `Recursive (Top-Down)` or `Iterative (Bottom-Up)` Approach
 - **Key Points**: Cache `memo` can be passed into the function as an input param
 ```Python
     def climbStairs(self, n: int, memo = {1: 1, 2:2}) -> int:
