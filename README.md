@@ -240,6 +240,7 @@ for index, value in enumerate(arr):
 |[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|`Medium`|[Code](./solution/92_Reverse_Linked_List_II.py)| |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|`Easy`|[Code](./solution/141_Linked_List_Cycle.py)| **Floyd's Tortoise and Hare Algorithm**: Use 2 pointers slow fast to traverse, if slow meets fast, meaning it is a cycle linked list|
 |[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|`Medium`|[Code](./solution/142_Linked_List_Cycle_II.py)| 	:star: **Good Algo to do** Need to calculate the distance to reach |
+|160. Intersection of Two Linked Lists|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)|Please refer the comment|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)||
 
 # 4. Hash Map
