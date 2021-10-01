@@ -111,6 +111,7 @@ s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index her
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)|`Easy`|[Code](./solution/1_Two_Sum.java)| Using Hash Map |
+| [2. Add Two Number]|`Medium`|[Code](./solution/2_Add_Two_Numbers.py)| |
 | [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|`Medium`|[Code](./solution/6_Zig_Zag_Conversion.py)| to identify the pattern |
 | [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|`Medium`| [Code](./solution/8_String_to_Integer.py) | to solve one by one, starting with `whitespace`, then `-/+` then `numbers` by iterating through the string with O(n)|
 | 20. Valid Parentheses | `Easy`| [Code](.solution/20_Valid_Parentheses.py)| Using Stack|
