@@ -113,6 +113,7 @@ s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index her
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)|`Easy`|[Code](./solution/1_Two_Sum.java)| Using Hash Map |
 | 2. Add Two Number|`Medium`|[Code](./solution/2_Add_Two_Numbers.py)| |
 | 3. Longest Substring Without Repeating Characters|`Medium`|[Code](./solution/3_Longest_Substring_Without_Repeating_Characters.py)| Need to have a start pointer along with i to loop through each element and a hash table to store the location |
+| 5. Longest Palindromic Substring |`Medium`|[Code](./solution/5_Longest_Palindromic_Substring.py)| Need to check if odd pal `cabac` and even pal `abba` and keep track on the maximum|
 | [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|`Medium`|[Code](./solution/6_Zig_Zag_Conversion.py)| to identify the pattern |
 | [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|`Medium`| [Code](./solution/8_String_to_Integer.py) | to solve one by one, starting with `whitespace`, then `-/+` then `numbers` by iterating through the string with O(n)|
 | 15. 3Sum |`Medium`| [Code](./solution/15_3Sum.py) | |
@@ -199,6 +200,7 @@ for index, value in enumerate(arr):
 
 | Problems   |Difficulty|      Solutions       |  Description |
 |------------|:--------:|:--------------------:|:------------|
+| 11. Container With Most Water |`Medium`|[Code](./solution/11_Container_With_Most_Water.py)| Need to start from both 2 end and go inwards |
 | [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
 | 121. Best Time to Buy and Sell Stock|`Easy`|[Code](./solution/121_Best_Time_to_Buy_and_Sell_Stock.py)| Need to keep track on buy price with the next days|
 - [75. Sort Colors (Dutch National Flag Problem)](./solution/75_Sort_Colors.py)
