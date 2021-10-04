@@ -115,6 +115,7 @@ s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index her
 | 3. Longest Substring Without Repeating Characters|`Medium`|[Code](./solution/3_Longest_Substring_Without_Repeating_Characters.py)| Need to have a start pointer along with i to loop through each element and a hash table to store the location |
 | [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|`Medium`|[Code](./solution/6_Zig_Zag_Conversion.py)| to identify the pattern |
 | [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|`Medium`| [Code](./solution/8_String_to_Integer.py) | to solve one by one, starting with `whitespace`, then `-/+` then `numbers` by iterating through the string with O(n)|
+| 15. 3Sum |`Medium`| [Code](./solution/15_3Sum.py) | |
 | 20. Valid Parentheses | `Easy`| [Code](.solution/20_Valid_Parentheses.py)| Using Stack|
 | [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)|`Medium`| [Code](./solution/50_Pow_x_n.py) | Using Recursive Approach, divide `power n` by `//2`, remember to take care of negative power i.e `n < 0` |
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)||[Code](./solution/125_Valid_Palindrome.py)| Check if original & reverse string are the same (ie: return *result == result[ : : -1])*|
