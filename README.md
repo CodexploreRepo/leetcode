@@ -269,8 +269,18 @@ for k, v in d.items():
 ```
 
 # 5. Queue
-- Queue in Python: using list with **dequeue** `list.pop(0)` and **enqueue** `list.append(item)`
-
+- Queue in Python: using list with **dequeue** `list.pop(0)` (But requiring O(n) as need to shift all elements) time and **enqueue** `list.append(item)`
+- Queue with Built-in Function:
+```Python
+from collections import deque
+ 
+# Initializing a queue
+q = deque()
+# Adding elements to a queue
+q.append('a')
+# Removing elements from a queue - only O(1) in compare with using List to implement Queue
+q.popleft()
+```
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
 |622. Design Circular Queue|`Medium`|[Code](./solution/622_Design_Circular_Queue.py)|To circular the array: `self.tail = (self.tail + 1)%self.size` For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/|
