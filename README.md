@@ -17,7 +17,8 @@ This is powered by CodeXplore
   - [3.1. Keynotes](#31-keynotes) 
   - [3.2. Linked List Problems](#32-linked-list-problems)
 - [4. Hash Map](#4-hash-map)
-  - [4.1. Keynotes](#41-keynotes)  
+  - [4.1. Keynotes](#41-keynotes)
+- [5. Queue](#5-queue)
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
 - [2. Dynamic Programming](#2-dynamic-programming)
@@ -265,6 +266,11 @@ To access keys, values, and items
 for k, v in d.items():
     print(k, v)
 ```
+
+# 5. Queue
+| Problems   | Difficulty |     Solutions      |  Description |
+|----------  |:----------:|:------------------:|:-------------|
+|622. Design Circular Queue|`Medium`|[Code](./solution/622_Design_Circular_Queue.py)|For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/|
 
 # Part B: Algorithms
 # 1. Recursion
