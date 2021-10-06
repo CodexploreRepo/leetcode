@@ -41,6 +41,7 @@ This is powered by CodeXplore
 - [String > Number] "9" to 9: `ord('9') - ord('0') = 9`, for s="123" to 123: `res = res*10 + ord(s[i]) - ord('0')`
 - [String] Palindromic `all(s[i] == s[~i] for i in range(len(s//2))` where `s[~i] = s[-(i+1)]`
 - [Set] Create a set of digits `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']` => `nums = set('0123456789')`
+- [Circular Array] to circular the array index `index = (index + 1) % array_size`
 
 ### External Library:
 -  `help()`: to understand the function usage. For ex: `help(math.log)`
