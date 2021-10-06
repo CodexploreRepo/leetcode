@@ -273,11 +273,8 @@ for k, v in d.items():
 - Queue with Built-in Function:
 ```Python
 from collections import deque
- 
-# Initializing a queue
-q = deque()
-# Adding elements to a queue
-q.append('a')
+q = deque() # Initializing a queue
+q.append('a') # Adding elements to a queue
 # Removing elements from a queue - only O(1) in compare with using List to implement Queue
 q.popleft()
 ```
