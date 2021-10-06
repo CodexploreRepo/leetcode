@@ -270,7 +270,7 @@ for k, v in d.items():
 # 5. Queue
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
-|622. Design Circular Queue|`Medium`|[Code](./solution/622_Design_Circular_Queue.py)|For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/|
+|622. Design Circular Queue|`Medium`|[Code](./solution/622_Design_Circular_Queue.py)|To circular the array: `self.tail = (self.tail + 1)%self.size` For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/|
 
 # Part B: Algorithms
 # 1. Recursion
