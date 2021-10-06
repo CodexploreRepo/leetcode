@@ -22,6 +22,7 @@ This is powered by CodeXplore
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
 - [2. Dynamic Programming](#2-dynamic-programming)
+- [3. BFS](#bfs)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -269,6 +270,7 @@ for k, v in d.items():
 ```
 
 # 5. Queue
+- Queue will be used for BFS
 - Queue in Python: using list with **dequeue** `list.pop(0)` (But requiring O(n) as need to shift all elements) time and **enqueue** `list.append(item)`
 - Queue with Built-in Function:
 ```Python
@@ -289,7 +291,7 @@ q.popleft()
     - `fib(1) = fib(2) = 1`
     - `fib(n) = fib(n-1) + fib(n-2)`
 
-## 2. Dynamic Programming
+# 2. Dynamic Programming
 - **Key Points**: DP can be done either by `Recursive (Top-Down)` or `Iterative (Bottom-Up)` Approach
 - **Key Points**: Cache `memo` can be passed into the function as an input param
 ```Python
@@ -301,6 +303,11 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
+
+# 3. BFS
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
 
 ### Searching
 | Algo Name   |      Note      | 
