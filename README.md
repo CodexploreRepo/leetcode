@@ -308,6 +308,7 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
+|752. Open the Lock |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
 
 ### Searching
 | Algo Name   |      Note      | 
