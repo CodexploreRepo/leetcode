@@ -357,6 +357,7 @@ dfs_postOrder(root, [])
 |104. Maximum Depth of Binary Tree|[Code](./solution/104_Maximum_Depth_of_Binary_Tree.java)| | DFS|
 | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/)|[Code](./solution/107_Binary_Tree_Level_Order_Traversal_II.py)| | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" />|
 |112. Path Sum |[Code](./solution/112_Path_Sum.py)| `Easy`| Need to check at leaf node, what is the remaining sum|
+|116. Populating Next Right Pointers in Each Node |[Code](./solution/116_Populating_Next_Right_Pointers_in_Each_Node.py)| `Medium`|BFS |
 |543. Diameter of Binary Tree|[Code](./solution/543_Diameter_of_Binary_Tree.py)|`Easy`|Need to calculate the left and the right height of the tree, then compare left_height + right_height with the max diameter|
 |700. Search in a Binary Search Tree|[Code](./solution/700_Search_in_a_Binary_Search_Tree.py)|`Easy`||
 |701. Insert into a Binary Search Tree|[Code](./solution/701_Insert_into_a_Binary_Search_Tree.py)|`Medium`| Same concept as Search in BST|
