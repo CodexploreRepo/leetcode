@@ -3,12 +3,13 @@ class Solution:
         if not root: return root
         queue = [root]
         while(queue):
-            size, prev = len(queue), Node()
+            size, prev = len(queue), Node() #at the start of each level, need to init an empty node "prev", as prev will store the previous node
             for _ in range(size):
                 cur = queue.pop(0)
-                if _ != size: #to ensure that if the last node, no need to update the .next
-                    prev.next = cur
-                    prev = cur
+                prev.next = cur
+                prev = cur
                 if cur.left: queue.append(cur.left)
                 if cur.right: queue.append(cur.right)
         return root
+    
+    
