@@ -23,6 +23,8 @@ This is powered by CodeXplore
 - [1. Recursion](#1-recursion)
 - [2. Dynamic Programming](#2-dynamic-programming)
 - [3. BFS](#bfs)
+- [4. Graph Theory](#4-graph-theory)
+  - [4.1. Topological Sort](#41-topological-sort)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -309,6 +311,14 @@ q.popleft()
 |------------|:-------------------:|-------------|------------|
 |200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
 |752. Open the Lock |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
+
+# 4. Graph Theory
+## 4.1. Topological Sort
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|210. Course Schedule II |[Code](./solution/210_Course_Schedule_II.py)| `Medium`| Step 1: Conver into a graph, then apply Topological Sort, remember to add the flag for Cycle Detection|
+
+
 
 ### Searching
 | Algo Name   |      Note      | 
