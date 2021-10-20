@@ -294,6 +294,10 @@ q.popleft()
     - `fib(n) = fib(n-1) + fib(n-2)`
 
 # 2. Dynamic Programming
+- **Tips**: For Dynamic Programming, it s very important to write down the `recurrence relationship` like below
+  - `d(i,j)` cell = relationship with its neighbors: `d(i, j+1)`, `d(i+1, j)`, `d(i+1, j+1)`
+<img width="545" src="https://user-images.githubusercontent.com/64508435/138033528-43884ee0-9cf9-438b-9c6e-732d9f63e758.png">
+
 - **Key Points**: DP can be done either by `Recursive (Top-Down)` or `Iterative (Bottom-Up)` Approach
 - **Key Points**: Cache `memo` can be passed into the function as an input param
 ```Python
@@ -305,6 +309,7 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
+|72. Edit Distance |[Code](./solution/72_Edit_Distance.py)| `Hard`||
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
 
 # 3. BFS
