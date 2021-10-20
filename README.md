@@ -25,6 +25,7 @@ This is powered by CodeXplore
 - [3. BFS](#bfs)
 - [4. Graph Theory](#4-graph-theory)
   - [4.1. Topological Sort](#41-topological-sort)
+  - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -324,8 +325,10 @@ q.popleft()
 |------------|:-------------------:|-------------|------------|
 |210. Course Schedule II |[Code](./solution/210_Course_Schedule_II.py)| `Medium`| Step 1: Conver into a graph, then apply Topological Sort, remember to add the flag for Cycle Detection|
 
-
-
+## 4.2. Minimum Spanning Tree - Kruskal Algorithm
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Kruskal Algorithm|
 ### Searching
 | Algo Name   |      Note      | 
 |----------|:-------------:|
