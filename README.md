@@ -26,6 +26,7 @@ This is powered by CodeXplore
 - [4. Graph Theory](#4-graph-theory)
   - [4.1. Topological Sort](#41-topological-sort)
   - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
+  - [4.3. Minimum Spanning Tree - Prim Algorithm](#42-minium-spanning-tree-prim-algorithm)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -329,6 +330,13 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Kruskal Algorithm|
+
+
+## 4.3. Minimum Spanning Tree - Prim Algorithm
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Prim Algorithm|
+
 ### Searching
 | Algo Name   |      Note      | 
 |----------|:-------------:|
