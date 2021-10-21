@@ -316,8 +316,8 @@ q.popleft()
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
 
 # 3. BFS
-- BFS for Graph: need to Keep Track on `Visited` vertices
-- BFS to find shortest path for un-weighted graph or weighted graph if all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
+- **BFS for Graph**: need to keep track on `visited` vertices
+- **BFS to find shortest path** for *un-weighted* graph or *weighted graph if all costs are equal*, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 
 | Problems   | Type        |      Solutions      |  Difficulty   | Description |
 |------------|:-----------:|:-------------------:|:-------------:|------------|
