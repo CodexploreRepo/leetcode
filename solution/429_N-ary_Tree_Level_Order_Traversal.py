@@ -5,7 +5,6 @@ class Solution:
         res = []
         while(queue):
             size, cur_level = len(queue), []
-            
             for _ in range(size):
                 cur_node = queue.popleft()
                 cur_level.append(cur_node.val)
