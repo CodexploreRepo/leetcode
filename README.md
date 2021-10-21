@@ -27,7 +27,7 @@ This is powered by CodeXplore
   - [4.1. Topological Sort](#41-topological-sort)
   - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
   - [4.3. Minimum Spanning Tree - Prim Algorithm](#43-minium-spanning-tree-prim-algorithm)
-  - [4.4. Shortest Path - Dijkstra Algorithm](#44-shortest-path-dijkstra-algorithm)
+  - [4.4. Shortest Path for Weighted Graph - Dijkstra Algorithm](#44-shortest-path-dijkstra-algorithm)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -316,10 +316,13 @@ q.popleft()
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
 
 # 3. BFS
+- BFS to find shortest path for un-weighted graph or weighted graph if all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
+
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
 |752. Open the Lock |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
+|2039. The Time When the Network Becomes Idle |[Code](./solution/2039_The_Time_When_the_Network_Becomes_Idle.py)| `Medium`| We can use DFS to calculate the travel time from master server to remain data servers like Level Traversal|
 
 # 4. Graph Theory
 ## 4.1. Topological Sort
@@ -338,7 +341,9 @@ q.popleft()
 |------------|:-------------------:|-------------|------------|
 |1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Prim Algorithm|
 
-## 4.4. Shortest Path - Dijkstra Algorithm
+## 4.4. Shortest Path for Weighted Graph - Dijkstra Algorithm
+- Dijkstra's algorithm: find the shortest path like BFS, but for weighted graphs.
+- If all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
