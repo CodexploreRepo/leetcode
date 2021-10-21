@@ -319,8 +319,8 @@ q.popleft()
 - BFS for Graph: need to Keep Track on `Visited` vertices
 - BFS to find shortest path for un-weighted graph or weighted graph if all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 
-| Problems   | Type      |      Solutions      |  Difficulty |Description |
-|------------|-----------|:-------------------:|-------------|------------|
+| Problems   | Type        |      Solutions      |  Difficulty   | Description |
+|------------|:-----------:|:-------------------:|:-------------:|------------|
 |200. Number of Islands | **Graph** |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
 |429. N-ary Tree Level Order Traversal|**Tree** |[Code](./solution/429_N-ary_Tree_Level_Order_Traversal.py)| `Medium`| |
 |752. Open the Lock |**Graph** |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
