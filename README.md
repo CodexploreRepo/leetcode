@@ -22,7 +22,7 @@ This is powered by CodeXplore
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
 - [2. Dynamic Programming](#2-dynamic-programming)
-- [3. BFS](#bfs)
+- [3. BFS](#3-bfs)
 - [4. Graph Theory](#4-graph-theory)
   - [4.1. Topological Sort](#41-topological-sort)
   - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
@@ -316,6 +316,7 @@ q.popleft()
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
 
 # 3. BFS
+- BFS for Graph: need to Keep Track on `Visited` vertices
 - BFS to find shortest path for un-weighted graph or weighted graph if all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 
 | Problems   |      Solutions      |  Difficulty |Description |
