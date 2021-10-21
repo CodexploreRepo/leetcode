@@ -321,9 +321,10 @@ q.popleft()
 
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
-|200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
-|752. Open the Lock |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
-|2039. The Time When the Network Becomes Idle |[Code](./solution/2039_The_Time_When_the_Network_Becomes_Idle.py)| `Medium`| We can use DFS to calculate the travel time from master server to remain data servers like Level Traversal|
+|**Graph** 200. Number of Islands |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
+|**Tree** 429. N-ary Tree Level Order Traversal|[Code](./solution/429_N-ary_Tree_Level_Order_Traversal.py)| `Medium`| |
+|**Graph** 752. Open the Lock |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
+|**Graph** 2039. The Time When the Network Becomes Idle |[Code](./solution/2039_The_Time_When_the_Network_Becomes_Idle.py)| `Medium`| We can use DFS to calculate the travel time from master server to remain data servers like Level Traversal|
 
 # 4. Graph Theory
 ## 4.1. Topological Sort
