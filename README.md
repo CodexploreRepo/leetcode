@@ -26,7 +26,8 @@ This is powered by CodeXplore
 - [4. Graph Theory](#4-graph-theory)
   - [4.1. Topological Sort](#41-topological-sort)
   - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
-  - [4.3. Minimum Spanning Tree - Prim Algorithm](#42-minium-spanning-tree-prim-algorithm)
+  - [4.3. Minimum Spanning Tree - Prim Algorithm](#43-minium-spanning-tree-prim-algorithm)
+  - [4.4. Shortest Path - Dijkstra Algorithm](#44-shortest-path-dijkstra-algorithm)
 - [Searching](#searching)
 - [LeetCode Solutions](#leetcode-solutions)
     - [Binary Tree - BFS & DFS](#binary-tree)
@@ -336,6 +337,12 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Prim Algorithm|
+
+## 4.4. Shortest Path - Dijkstra Algorithm
+
+| Problems   |      Solutions      |  Difficulty |Description |
+|------------|:-------------------:|-------------|------------|
+|743. Network Delay Time |[Code](./solution/743_Network_Delay_Time.py)| `Medium`| This is Dijkstra for the directed Graph - Need to take care the adj_list |
 
 ### Searching
 | Algo Name   |      Note      | 
