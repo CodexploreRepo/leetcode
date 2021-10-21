@@ -344,8 +344,8 @@ q.popleft()
 |1584. Min Cost to Connect All Points |[Code](./solution/1584_Min_Cost_to_Connect_All_Points.py)| `Medium`| Using Prim Algorithm|
 
 ## 4.4. Shortest Path for Weighted Graph - Dijkstra Algorithm
-- Dijkstra's algorithm: find the shortest path like BFS, but for weighted graphs.
-- If all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
+- **Dijkstra's algorithm**: find the shortest path like BFS, but for weighted graphs.
+  - If all costs are equal, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
