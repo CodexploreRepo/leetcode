@@ -313,7 +313,9 @@ q.popleft()
 |------------|:-------------------:|-------------|------------|
 |70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
 |72. Edit Distance |[Code](./solution/72_Edit_Distance.py)| `Hard`||
+|198. House Robber |[Code](./solution/198_House_Robber.py)| `Medium`||
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
+
 
 # 3. BFS
 - **BFS for Graph**: need to keep track on `visited` vertices
