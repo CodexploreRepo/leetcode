@@ -319,13 +319,25 @@ q.popleft()
 
 
 # 3. BFS
-- **BFS for Graph**: need to keep track on `visited` vertices
+- **BFS for Graph**: need to keep track on `visited = set()` vertices
 - **BFS to find shortest path** for *un-weighted* graph or *weighted graph if all costs are equal*, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
+- **Find Neighbors:**
+  - **2D Matrix**: 
+  ```Python
+  direction = [(0,-1), (0,1), (-1,0), (1,0)] #Top, Down, Left, Right
+  while(queue):
+      i, j = queue.pop(0)
+      for d_i, d_j in direction:
+          new_i, new_j = i + d_i, j + d_j
+          if (new_i >= 0 and new_i < row) and (new_j >= 0 and new_j < col):
+          #For valid new_i, new_j, do something 
+  ```
 
 | Problems   | Type        |      Solutions      |  Difficulty   | Description |
 |------------|:-----------:|:-------------------:|:-------------:|------------|
 |200. Number of Islands | **Graph** |[Code](./solution/200_Number_of_Islands.py)| `Medium`| Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue|
 |429. N-ary Tree Level Order Traversal|**Tree** |[Code](./solution/429_N-ary_Tree_Level_Order_Traversal.py)| `Medium`| |
+|542. 01 Matrix|**Tree** |[Code](./solution//solution/542_01_Matrix.py)| `Medium`| Using BFS for multiple nodes at the same time **Land-Sea Strategy**|
 |752. Open the Lock |**Graph** |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
 |2039. The Time When the Network Becomes Idle |**Graph** |[Code](./solution/2039_The_Time_When_the_Network_Becomes_Idle.py)| `Medium`| We can use DFS to calculate the travel time from master server to remain data servers like Level Traversal|
 
