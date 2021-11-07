@@ -312,6 +312,8 @@ q.popleft()
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |53. Maximum Subarray|[Code](./solution/53_Maximum_Subarray.py)| `Easy`|`T(i) = max(T(i-1) + nums[i] , nums[i])` where T(i) is maximum sum at that particular position|
+|62. Unique Paths|[Code](./solution/62_Unique_Paths.py)| `Medium`||
+|53. Maximum Subarray|[Code](./solution/53_Maximum_Subarray.py)| `Easy`|`T(i) = max(T(i-1) + nums[i] , nums[i])` where T(i) is maximum sum at that particular position|
 |70. Climbing Stairs |[Code](./solution/70_Climbing_Stairs.py)| `Easy`|At T(n): first step = 1, remaining steps = T(n-1) or first step = 2, remaing steps = T(n-2). This recurrence relationship is similar to Fibonacci number|
 |72. Edit Distance |[Code](./solution/72_Edit_Distance.py)| `Hard`||
 |198. House Robber |[Code](./solution/198_House_Robber.py)| `Medium`||
