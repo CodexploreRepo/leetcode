@@ -22,7 +22,9 @@ This is powered by CodeXplore
 - [Part B: Algorithms](#part-b-algorithms)
 - [1. Recursion](#1-recursion)
 - [2. Dynamic Programming](#2-dynamic-programming)
-- [3. BFS](#3-bfs)
+- [3. BFS & DFS](#3-bfs-and-dfs)
+  - [3.1. BFS](#31-bfs)
+  - [3.2. DFS](#32-dfs)
 - [4. Graph Theory](#4-graph-theory)
   - [4.1. Topological Sort](#41-topological-sort)
   - [4.2. Minimum Spanning Tree - Kruskal Algorithm](#42-minium-spanning-tree-kruskal-algorithm)
@@ -319,8 +321,8 @@ q.popleft()
 |198. House Robber |[Code](./solution/198_House_Robber.py)| `Medium`||
 |1143. Longest Common Subsequence |[Code](./solution/1143_Longest_Common_Subsequence.py)| `Medium`||
 
-
-# 3. BFS
+# 3. BFS and DFS
+## 3.1. BFS
 - **BFS for Graph**: need to keep track on `visited = set()` vertices
 - **BFS to find shortest path** for *un-weighted* graph or *weighted graph if all costs are equal*, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
 - **Find Neighbors:**
@@ -342,6 +344,12 @@ q.popleft()
 |542. 01 Matrix|**Tree** |[Code](./solution//solution/542_01_Matrix.py)| `Medium`| Using BFS for multiple nodes at the same time **Land-Sea Strategy**|
 |752. Open the Lock |**Graph** |[Code](./solution/752_Open_the_Lock.py)| `Medium`| from start, add the next possible turn into the queue and then continue to search with Target|
 |2039. The Time When the Network Becomes Idle |**Graph** |[Code](./solution/2039_The_Time_When_the_Network_Becomes_Idle.py)| `Medium`| We can use DFS to calculate the travel time from master server to remain data servers like Level Traversal|
+
+## 3.2. DFS
+| Problems   | Type        |      Solutions      |  Difficulty   | Description |
+|------------|:-----------:|:-------------------:|:-------------:|------------|
+|797. All Paths From Source to Target | **DAG** |[Code](./solution/797_All_Paths_From_Source_to_Target.py)| `Medium`|DFS without the color flag|
+
 
 # 4. Graph Theory
 ## 4.1. Topological Sort
