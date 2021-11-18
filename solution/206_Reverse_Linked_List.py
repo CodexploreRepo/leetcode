@@ -6,15 +6,10 @@ class Solution:
         Time: O(n)
         Space: O(1)
         """
-        if not (head):
-            return head
-        
-        dummy_head = None
-        currNode = head
-        while(currNode):
-            temp = currNode.next
-            currNode.next = dummy_head
-            dummy_head = currNode
-            currNode = temp
-        
-        return dummy_head
+        curr = None
+        while(head):
+            temp = head.next
+            head.next = curr
+            curr = head
+            head = temp
+        return curr
