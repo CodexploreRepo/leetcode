@@ -298,6 +298,7 @@ q.popleft()
   - Ex1 - [Fibonacci](https://www.mathsisfun.com/numbers/fibonacci-sequence.html): The next number is found by adding up the two numbers before it
     - `fib(1) = fib(2) = 1`
     - `fib(n) = fib(n-1) + fib(n-2)`
+
 | Problems   |      Solutions      |  Difficulty |Description |
 |------------|:-------------------:|-------------|------------|
 |24. Swap Nodes in Pairs |[Code](./solution/24_Swap_Nodes_in_Pairs.py)| `Medium`| Refer to the code comments|
