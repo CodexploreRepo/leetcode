@@ -4,8 +4,9 @@
 
 | Problems   | Difficulty |     Solutions      |  Complexity |
 |----------  |:----------:|:-------------------|:-------------|
-|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|`Easy`| **Hash Set** <br> Alternative: Sort & then takes `O(n)` to compare, but sorting costs `O(nlogn)` | Time Complexity `O(n)`<br> Space Complexity `O(n)`|
-|[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|`Easy`| **Hash Set** |Time Complexity `O(n)`<br> Space Complexity `O(n)`|
+|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|`Easy`| **Hash Set** <br> Alternative: Sort & then takes `O(n)` to compare, but sorting costs `O(nlogn)` | Time `O(n)`<br> Space `O(n)`|
+|[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|`Easy`| **Hash Set** |Time `O(n)`<br> Space `O(n)`|
+|[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|`Medium`|**Sorting + Hash Set** ||
 
 ## Hashing
 - Hashing can be implemented via `set` or `dict`
@@ -30,7 +31,6 @@ class Solution:
             hash_map[elem] += 1
             if hash_map[elem] > 1:
                 return True
-            
         else:
             return False
 ```
