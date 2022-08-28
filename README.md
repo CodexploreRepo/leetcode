@@ -6,7 +6,7 @@
 |----------  |:----------:|:-------------------|:-------------|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|`Easy`| **Hash Set** <br> Alternative: Sort & then takes `O(n)` to compare, but sorting costs `O(nlogn)` | Time `O(n)`<br> Space `O(n)`|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|`Easy`| **Hash Set** |Time `O(n)`<br> Space `O(n)`|
-|[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|`Medium`|**Sorting + Hash Set** ||
+|[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|`Medium`|**Sorting + Hash Set** |Time: `O(n * (a*log(a))` <br>where a is max length of strings in the list, where n is the length of the list of string |
 
 # Python Tips
 ## Hashing
