@@ -8,6 +8,7 @@
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|`Easy`| **Hash Set** |Time `O(n)`<br> Space `O(n)`|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|`Medium`|**Sorting + Hash Set** ||
 
+# Python Tips
 ## Hashing
 - Hashing can be implemented via `set` or `dict`
 ### Hash Set
@@ -33,4 +34,12 @@ class Solution:
                 return True
         else:
             return False
+```
+## Sorting
+- `sorted(iterable, key=key, reverse=reverse)`
+    - return a sorted list of the specified iterable object.
+    
+```Python
+a = "azy"
+x = sorted(a) #['a', 'y', 'z']
 ```
