@@ -24,9 +24,10 @@ class Solution:
 ```
 ### Hash Map
 ```Python
+from collections import defaultdict
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        from collections import defaultdict
         hash_map = defaultdict(lambda: 0) #using defaultdict
         for elem in nums:
             hash_map[elem] += 1
