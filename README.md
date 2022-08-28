@@ -44,3 +44,5 @@ class Solution:
 a = "azy"
 x = sorted(a) #['a', 'y', 'z']
 ```
+### Sorting a Dict
+- Based on values: `dict(sorted(name_diff.items(), key=lambda x: x[1], reverse = True))`
