@@ -3,7 +3,7 @@
 # Arrays & Hashing
 
 | Problems   | Difficulty |     Tips           |  Solutions| Complexity |
-|:----------:|:----------:|:------------------:|:---------:|:-----------:|
+|:-----------|:----------:|:-------------------|:---------:|:-----------|
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|`Easy`| **3 Pointers + Backward Move** |[Code](./solution/88_Merge_Sorted_Array.py)| Time `O(n)`<br> Space `O(1)` in-place array modification|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|`Easy`| **Hash Set** <br> Alternative: Sort & then takes `O(n)` to compare, but sorting costs `O(nlogn)`| | Time `O(n)`<br> Space `O(n)`|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|`Easy`| **Hash Set** ||Time `O(n)`<br> Space `O(n)`|
