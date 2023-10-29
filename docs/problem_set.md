@@ -1,0 +1,20 @@
+# Problem Set
+
+# Arrays & Hashing
+
+| Problems                                                                     | Difficulty | Tips                                                                                             |                  Solutions                  | Complexity                                                                                                             |
+| :--------------------------------------------------------------------------- | :--------: | :----------------------------------------------------------------------------------------------- | :-----------------------------------------: | :--------------------------------------------------------------------------------------------------------------------- |
+| [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)  |   `Easy`   | **3 Pointers + Backward Move**                                                                   | [Code](./solution/88_Merge_Sorted_Array.py) | Time $O(n)$<br> Space $O(1)$ in-place array modification                                                               |
+| [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |   `Easy`   | **Hash Set** <br> Alternative: Sort & then takes $O(n)$ to compare, but sorting costs $O(nlogn)$ |                                             | Time $O(n)$<br> Space $O(n)$                                                                                           |
+| [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)           |   `Easy`   | **Hash Set**                                                                                     |                                             | Time $O(n)$<br> Space $O(n)$                                                                                           |
+| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)          |  `Medium`  | **Sorting + Hash Set**                                                                           |                                             | Time: $O(n * (a*log(a))$ <br>where a is max length of strings in the list, where n is the length of the list of string |
+
+## Dynamic Programming
+
+### Problems
+
+| Problems                                                                               | Difficulty | Tips          |                           Solutions                            | Complexity                                                                                                                                                                                      |
+| :------------------------------------------------------------------------------------- | :--------: | :------------ | :------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/target-sum/) |  `Medium`  | Back-tracking | [Code](./solution/17_Letter_Combinations_of_a_Phone_Number.py) | Time: $O(n * 4^n)$ <br> Space: <br>where `n` = len of digits, and m is len of character set that corresponding to each digit, in this case max `m = 4`                                          |
+| [Subset](https://leetcode.com/problems/subsets/description/)                           |  `Medium`  | Back-tracking |                [Code](./solution/78_subset.py)                 | Time: $O(n * 2^n)$ where $2^n$ is total number of subsets and $n$ is to copy each subset to `res` <br> Space: $O(n)$ as we need a `temp` array and `curr_subset` <br>where `n` = length of nums |
+| [494. Target Sum](https://leetcode.com/problems/target-sum/)                           |  `Medium`  | Back-tracking |                                                                |                                                                                                                                                                                                 |
