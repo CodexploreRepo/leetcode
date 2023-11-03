@@ -11,10 +11,10 @@
 
 ## Sliding Windows
 
-| Problems                                                                                               | Difficulty |                               Solutions                                | Description                                                                                                   |
-| ------------------------------------------------------------------------------------------------------ | :--------: | :--------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------ |
-| [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |   `Easy`   |      [Code](.././solution/121_Best_Time_to_Buy_and_Sell_Stock.py)      | Need to keep track on buy price with the next days                                                            |
-| 3. Longest Substring Without Repeating Characters                                                      |  `Medium`  | [Code](./solution/3_Longest_Substring_Without_Repeating_Characters.py) | Need to have a start pointer along with i to loop through each element and a hash table to store the location |
+| Problems                                                                                               | Difficulty |                                 Solutions                                 | Description                                                                                                   |
+| ------------------------------------------------------------------------------------------------------ | :--------: | :-----------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------ |
+| [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |   `Easy`   |       [Code](.././solution/121_Best_Time_to_Buy_and_Sell_Stock.py)        | Need to keep track on buy price with the next days                                                            |
+| 3. Longest Substring Without Repeating Characters                                                      |  `Medium`  | [Code](.././solution/3_Longest_Substring_Without_Repeating_Characters.py) | Need to have a start pointer along with i to loop through each element and a hash table to store the location |
 
 ## Linked List
 
