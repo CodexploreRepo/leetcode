@@ -1,6 +1,9 @@
 # Leetcode
+
 ## Data Structure
+
 - [Linked List](./docs/ds/linked_list.md)
+
 ## Algorithm
 
 - [Back Tracking](./docs/algorithm/backtracking.md)
