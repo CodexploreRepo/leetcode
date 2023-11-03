@@ -1,6 +1,6 @@
 # Leetcode
 
-## Technique
+## Patterns
 
 - [Back Tracking](./docs/backtracking.md)
   - **Usage**: generate all combinations, permuations, subsets
