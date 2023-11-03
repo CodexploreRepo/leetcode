@@ -6,10 +6,15 @@ class Solution:
         Time: O(n)
         Space: O(1)
         """
-        curr = None
-        while(head):
-            temp = head.next
-            head.next = curr
-            curr = head
-            head = temp
-        return curr
+        dummy_head = None
+
+        while head:
+            # use tmp to store the head.next (reference of the remaining list)
+            tmp = head.next
+            # point head.next to dummy_head
+            head.next = dummy_head
+            # move dummy_head to head
+            dummy_head = head
+            # re-assign head back to the tmp (reference of the remaining list)
+            head = tmp
+        return dummy_head

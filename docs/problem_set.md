@@ -9,6 +9,12 @@
 | [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)           |   `Easy`   | **Hash Set**                                                                                     |                                             | Time $O(n)$<br> Space $O(n)$                                                                                           |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)          |  `Medium`  | **Sorting + Hash Set**                                                                           |                                             | Time: $O(n * (a*log(a))$ <br>where a is max length of strings in the list, where n is the length of the list of string |
 
+## Linked List
+| Problems   | Difficulty |     Solutions      |  Description |
+|----------  |:----------:|:------------------:|:-------------|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)||
+|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|`Easy`|[Code](./solution/141_Linked_List_Cycle.py)| **Floyd's Tortoise and Hare Algorithm**: Use 2 pointers slow fast to traverse, if slow meets fast, meaning it is a cycle linked list|
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
 ## Dynamic Programming
 
 ### Problems
