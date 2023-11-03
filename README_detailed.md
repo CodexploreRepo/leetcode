@@ -213,7 +213,7 @@ for index, value in enumerate(arr):
 |------------|:--------:|:--------------------:|:------------|
 | 11. Container With Most Water |`Medium`|[Code](./solution/11_Container_With_Most_Water.py)| Need to start from both 2 end and go inwards |
 | [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
-| 121. Best Time to Buy and Sell Stock|`Easy`|[Code](./solution/121_Best_Time_to_Buy_and_Sell_Stock.py)| Need to keep track on buy price with the next days|
+
 - [75. Sort Colors (Dutch National Flag Problem)](./solution/75_Sort_Colors.py)
     - **Learn #1**: to sort an array with (3 type of element) in Time Complexity O(n), use `Dutch National Flag` algo.
       - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
