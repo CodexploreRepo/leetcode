@@ -213,7 +213,7 @@ for index, value in enumerate(arr):
 |------------|:--------:|:--------------------:|:------------|
 | 11. Container With Most Water |`Medium`|[Code](./solution/11_Container_With_Most_Water.py)| Need to start from both 2 end and go inwards |
 | [66. Plus One](https://leetcode.com/problems/plus-one/)| `Easy` |[Code](./solution/66_Plus_One.py)| Using `list.insert(0,new_element)` for first element insert to array|
-| 121. Best Time to Buy and Sell Stock|`Easy`|[Code](./solution/121_Best_Time_to_Buy_and_Sell_Stock.py)| Need to keep track on buy price with the next days|
+
 - [75. Sort Colors (Dutch National Flag Problem)](./solution/75_Sort_Colors.py)
     - **Learn #1**: to sort an array with (3 type of element) in Time Complexity O(n), use `Dutch National Flag` algo.
       - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
@@ -253,12 +253,8 @@ for index, value in enumerate(arr):
 | Problems   | Difficulty |     Solutions      |  Description |
 |----------  |:----------:|:------------------:|:-------------|
 |19. Remove Nth Node From End of Lists|`Medium`|[Code](./solution/19_Remove_Nth_Node_From_End_of_List.py)||
-|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|`Easy`|[Code](./solution/21_Merge_Two_Sorted_List.py)| Use 2 pointers to traverse the two lists|
 |[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|`Medium`|[Code](./solution/92_Reverse_Linked_List_II.py)| |
-|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|`Easy`|[Code](./solution/141_Linked_List_Cycle.py)| **Floyd's Tortoise and Hare Algorithm**: Use 2 pointers slow fast to traverse, if slow meets fast, meaning it is a cycle linked list|
 |[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|`Medium`|[Code](./solution/142_Linked_List_Cycle_II.py)| 	:star: **Good Algo to do** Need to calculate the distance to reach |
-|160. Intersection of Two Linked Lists|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)|Please refer the comment|
-|203. Remove Linked List Elements|`Easy`|[Code](./solution/203_Remove_Linked_List_Elements.py)|Create a dummy head and connect it the head, to prevent the case that we need to remove the head|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)||
 
 # 4. Hash Map
