@@ -255,8 +255,6 @@ for index, value in enumerate(arr):
 |19. Remove Nth Node From End of Lists|`Medium`|[Code](./solution/19_Remove_Nth_Node_From_End_of_List.py)||
 |[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|`Medium`|[Code](./solution/92_Reverse_Linked_List_II.py)| |
 |[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|`Medium`|[Code](./solution/142_Linked_List_Cycle_II.py)| 	:star: **Good Algo to do** Need to calculate the distance to reach |
-|160. Intersection of Two Linked Lists|`Easy`|[Code](./solution/92_Reverse_Linked_List_II.py)|Please refer the comment|
-|203. Remove Linked List Elements|`Easy`|[Code](./solution/203_Remove_Linked_List_Elements.py)|Create a dummy head and connect it the head, to prevent the case that we need to remove the head|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|`Easy`|[Code](./solution/206_Reverse_Linked_List.py)||
 
 # 4. Hash Map
