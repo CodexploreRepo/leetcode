@@ -27,9 +27,13 @@
 | [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) |   `Easy`   | [Code](.././solution/203_Remove_Linked_List_Elements.py) | Create a dummy head and connect it the head, to prevent the case that we need to remove the head                                                                       |
 | [143. Reorder List](https://leetcode.com/problems/reorder-list/)                                           |  `Medium`  |        [Code](.././solution/143_Reorder_List.py)         | **Step 1**: Find the middle point of the linked list <br>**Step 2**: Reverse the second half of the linked list<br>**Step 3**: Merge first & second half alternatively |
 
-## Dynamic Programming
+## Stack
 
-### Problems
+| Problems              | Difficulty |                   Solutions                   | Description |
+| --------------------- | :--------: | :-------------------------------------------: | :---------- |
+| 20. Valid Parentheses |   `Easy`   | [Code](.././solution/20_Valid_Parentheses.py) | Using Stack |
+
+## Dynamic Programming
 
 | Problems                                                                               | Difficulty | Tips          |                           Solutions                            | Complexity                                                                                                                                                                                      |
 | :------------------------------------------------------------------------------------- | :--------: | :------------ | :------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
