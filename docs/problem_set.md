@@ -35,13 +35,12 @@
 
 ## Tree
 
-| Problems                                                                                                               | Difficulty |                           Solutions                            | Description     |
-| ---------------------------------------------------------------------------------------------------------------------- | :--------: | :------------------------------------------------------------: | :-------------- |
-| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)          |   `Easy`   |   [Code](.././solution/94_Binary_Tree_Inorder_Traversal.py)    | Using Recursion |
-| [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) |  `Medium`  | [Code](.././solution/102_Binary_Tree_Level_Order_Traversal.py) | Using BFS       |
-| [100. Same Tree](https://leetcode.com/problems/same-tree/)                                                             |   `Easy`   |             [Code](.././solution/100_Same_Tree.py)             |                 |
-| [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                                       |   `East`   |          [Code](.././solution/101_Symmetric_Tree.py)           |                 |
-| [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                           |   `East`   |       [Code](.././solution/110_Balanced_Binary_Tree.py)        |                 |
+| Problems                                                                                                      | Difficulty |                         Solutions                         | Description     |
+| ------------------------------------------------------------------------------------------------------------- | :--------: | :-------------------------------------------------------: | :-------------- |
+| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) |   `Easy`   | [Code](.././solution/94_Binary_Tree_Inorder_Traversal.py) | Using Recursion |
+| [100. Same Tree](https://leetcode.com/problems/same-tree/)                                                    |   `Easy`   |          [Code](.././solution/100_Same_Tree.py)           |                 |
+| [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                              |   `East`   |        [Code](.././solution/101_Symmetric_Tree.py)        |                 |
+| [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                  |   `East`   |     [Code](.././solution/110_Balanced_Binary_Tree.py)     |                 |
 
 ## Binary Search (Tree)
 
@@ -52,9 +51,17 @@
 
 ## BFS
 
-| Problems               | Difficulty |                   Solutions                    | Description |
-| ---------------------- | :--------: | :--------------------------------------------: | :---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 200. Number of Islands | **Graph**  | [Code](.././solution/200_Number_of_Islands.py) | `Medium`    | Need to go through all the cells in the grid and then search adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue |
+### BFS Tree
+
+| Problems                                                                                                               | Difficulty |                           Solutions                            | Description |
+| ---------------------------------------------------------------------------------------------------------------------- | :--------: | :------------------------------------------------------------: | :---------- |
+| [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) |  `Medium`  | [Code](.././solution/102_Binary_Tree_Level_Order_Traversal.py) | Using BFS   |
+
+### BFS Graph
+
+| Problems                                                                   | Difficulty |                   Solutions                    | Description                                                                                                                                                                      |
+| -------------------------------------------------------------------------- | :--------: | :--------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) |  `Medium`  | [Code](.././solution/200_Number_of_Islands.py) | Need to go through all the cells in the grid and then search adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue |
 
 ## Dynamic Programming
 
