@@ -369,22 +369,6 @@ q.popleft()
 
 # 3. BFS and DFS
 
-## 3.1. BFS
-
-- **BFS for Graph**: need to keep track on `visited = set()` vertices
-- **BFS to find shortest path** for _un-weighted_ graph or _weighted graph if all costs are equal_, we can use BFS (Level Traversal) instead of Dijkstra's algorithm.
-- **Find Neighbors:**
-  - **2D Matrix**:
-  ```Python
-  direction = [(0,-1), (0,1), (-1,0), (1,0)] #Top, Down, Left, Right
-  while(queue):
-      i, j = queue.pop(0)
-      for d_i, d_j in direction:
-          new_i, new_j = i + d_i, j + d_j
-          if (new_i >= 0 and new_i < row) and (new_j >= 0 and new_j < col):
-          #For valid new_i, new_j, do something
-  ```
-
 | Problems                                     |   Type    |                             Solutions                             | Difficulty | Description                                                                                                                            |
 | -------------------------------------------- | :-------: | :---------------------------------------------------------------: | :--------: | -------------------------------------------------------------------------------------------------------------------------------------- |
 | 200. Number of Islands                       | **Graph** |            [Code](./solution/200_Number_of_Islands.py)            |  `Medium`  | Need to search the adjacent location (top, down, left, right) of the "1" cell to find the maximum size of an island, then can continue |
