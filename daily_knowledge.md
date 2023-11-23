@@ -1,5 +1,16 @@
 # Daily Knowledge
 
+## Day 2
+
+### Top Coding Interview Concepts
+
+- Hash Map: duplicate, count
+- Recursion: Backtracking, DP
+- DFS & BFS
+- Binary Search
+- Sliding Window
+- Heap: Top K
+
 ## Day 1
 
 ### Backtracking

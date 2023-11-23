@@ -4,7 +4,7 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        l, r = 0, 1 # left (buy), right (sell)
+        l, r = 0, 1  # left (buy), right (sell)
 
         max_profit = 0
         total_days = len(prices)

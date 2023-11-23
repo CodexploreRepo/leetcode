@@ -11,9 +11,11 @@
 
 ## Sliding Windows
 
-| Problems                                                                                               | Difficulty |                          Solutions                           | Description                                        |
-| ------------------------------------------------------------------------------------------------------ | :--------: | :----------------------------------------------------------: | :------------------------------------------------- |
-| [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |   `Easy`   | [Code](.././solution/121_Best_Time_to_Buy_and_Sell_Stock.py) | Need to keep track on buy price with the next days |
+| Problems                                                                                                                           | Difficulty |                                 Solutions                                 | Description                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------ |
+| [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                             |   `Easy`   |       [Code](.././solution/121_Best_Time_to_Buy_and_Sell_Stock.py)        | Need to keep track on buy price with the next days                                                            |
+| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  `Medium`  | [Code](.././solution/3_Longest_Substring_Without_Repeating_Characters.py) | Need to have a start pointer along with i to loop through each element and a hash table to store the location |
+| [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                 |  `Medium`  |        [Code](../solution/438_Find_All%20Anagrams_in_a_String.py)         | Need to have hash_map to store the counts of `s` and `p`, and comparing the count                             |
 
 ## Linked List
 

@@ -6,20 +6,20 @@ class Solution(object):
         """
         if not s:
             return 0
-        # initialise left and right pointer
-        l, r = 0, 1
-        sub_set, max_len = set(s[l]), 1
+        left, right, n = 0, 1, len(s)
 
-        # ensure that r pointer is not exceed then len(s)
-        while r < len(s):
-            if s[r] not in sub_set:
-                sub_set.add(s[r])
-                max_len = max(max_len, len(sub_set))
-                r += 1
+        max_length, sub_str = 1, {s[left]: left}
+
+        while right < n:
+            if s[right] not in sub_str:
+                sub_str[s[right]] = right
+                max_length = max(max_length, len(sub_str))
+
             else:
-                # if r in the sub_set, we will remove the left-most item out of the sub_set
-                # increase l pointer to the next pos
-                sub_set.remove(s[l])
-                l += 1
+                # move the left pointer to (first occurence) + 1 of the repeated char
+                left = sub_str[s[right]] + 1
+                # re-create the sub-string
+                sub_str = {s[i]: i for i in range(left, right + 1)}
 
-        return max_len
+            right += 1
+        return max_length
