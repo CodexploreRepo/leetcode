@@ -45,6 +45,8 @@
 
 ## Binary Search (Tree)
 
+- Hints: sorted arrays
+
 | Problems                                                                               | Difficulty |                   Solutions                    | Description                                             |
 | -------------------------------------------------------------------------------------- | :--------: | :--------------------------------------------: | :------------------------------------------------------ |
 | [704. Binary Search](https://leetcode.com/problems/binary-search/description/)         |   `Easy`   |   [Code](.././solution/704_Binary_Search.py)   |                                                         |
