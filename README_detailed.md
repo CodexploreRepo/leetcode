@@ -4,6 +4,8 @@
 
 This is powered by CodeXplore
 
+This is powered by CodeXplore
+
 # Table of contents
 
 - [Table of contents](#table-of-contents)
@@ -38,6 +40,10 @@ This is powered by CodeXplore
   - [N-ary Tree - BFS & DFS](#n-ary-tree)
   - [Class Design](#class-design)
   - [Others](#others)
+  - [Binary Tree - BFS & DFS](#binary-tree)
+  - [N-ary Tree - BFS & DFS](#n-ary-tree)
+  - [Class Design](#class-design)
+  - [Others](#others)
 - [Resources](#resources)
 - [License](#license)
 
@@ -60,6 +66,9 @@ This is powered by CodeXplore
 - `help()`: to understand the function usage. For ex: `help(math.log)`
 - `dir()`: See all the names in `module` or to understand an un-known object, using the built-in function **dir()**
 
+- `help()`: to understand the function usage. For ex: `help(math.log)`
+- `dir()`: See all the names in `module` or to understand an un-known object, using the built-in function **dir()**
+
 ```Python
 import math
 print(dir(math))
@@ -68,6 +77,11 @@ print(dir(math))
 ```
 
 ## 1.2. Bitwise Operation:
+
+- `n-bit`binary numbers can re-present 2^(n) distinct integers. For example: 4-bit binary numbers can represent 16 distinct integers.
+-
+- `x << y`: x is _Left_ shifted by `2**y` same as multiplying x by `2**y` (and new bits on the right-hand-side are zeros).
+- `x >> y`: x is _Right_ shifted by `2**y` same as dividing x by `2**y` (and new bits on the left-hand-side are zeros).
 
 - `n-bit`binary numbers can re-present 2^(n) distinct integers. For example: 4-bit binary numbers can represent 16 distinct integers.
 -
@@ -99,6 +113,10 @@ while x:
 ```
 
 - Explain `result ^= x & 1`
+
+  - If res is even (0) and x-bit is 1, res evaluates to odd (1).
+  - If res is odd (1) and x-bit is 1, res evaluates to even (0).
+
   - If res is even (0) and x-bit is 1, res evaluates to odd (1).
   - If res is odd (1) and x-bit is 1, res evaluates to even (0).
 
@@ -109,12 +127,17 @@ while x:
     - initialise an integer variable num to 0
     - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
     - `num << 1 | head.val` Add (|) next bit to num at least significant position
+  - Tips: Bitwise operation
+    - initialise an integer variable num to 0
+    - `num << 1` left shift `num` by 1 position to make way for the val in the next node in linked list. This is same as multiplying num by 2
+    - `num << 1 | head.val` Add (|) next bit to num at least significant position
 
 ## 1.3. Strings and Numbers
 
 #### 1.3.1. find() and rfind()
 
 - `.find()`: find the starting index of the first occurrence of a substring as specified
+  <img width="845" alt="Screenshot 2021-08-25 at 22 11 40" src="https://user-images.githubusercontent.com/64508435/130806533-e176d08a-168c-4b26-92d2-6b0dacb1aa4a.png">
   <img width="845" alt="Screenshot 2021-08-25 at 22 11 40" src="https://user-images.githubusercontent.com/64508435/130806533-e176d08a-168c-4b26-92d2-6b0dacb1aa4a.png">
 
 ```python
@@ -167,7 +190,17 @@ s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index her
      #Do somthing here with each digit d
      n //=10
   ```
+  - **Learn #1**: Splitting A Number (169) into Digit (9, 6, 1)
+  ```Python
+   while n > 0:
+     d = n%10
+     #Do somthing here with each digit d
+     n //=10
+  ```
 - [1304. Find N Unique Integers Sum up to Zero](./solution/1304_Find_N_Unique_Integers_Sum_up_to_Zero.py)
+
+  - **Learn #1**: Do not be misleading by Examples, find the general rule
+  - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
 
   - **Learn #1**: Do not be misleading by Examples, find the general rule
   - **Learn #2**: Python to append multiple items into list: `result+=[i, -i]`
@@ -175,12 +208,28 @@ s.rfind('n', 0, 12) #return = 5 > represents not found, not a negative index her
 - [1370. Increasing Decreasing String](./solution/1370_Increasing_Decreasing_String.py)
   - **Learn #1**: Hash Table + Sorted + Flag `desc` to toggle the sort direction `sorted(dict, reverse = desc)`
   - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
+  - **Learn #1**: Hash Table + Sorted + Flag `desc` to toggle the sort direction `sorted(dict, reverse = desc)`
+  - **Learn #2**: To flipping between `True/False` in Python, we can use `~` i.e `desc = ~desc
 - [1436. Destination City](./solution/1436_Destination_City.py)
+  - **Learn**: using Hash Table to check for existing of elements instead of looping through
   - **Learn**: using Hash Table to check for existing of elements instead of looping through
 - [1464. Maximum Product of Two Elements in an Array](./solution/1464_Maximum_Product_of_Two_Elements_in_an_Array.py)
   Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`. - **Learn**: Find the 2 largest elements in nums
+  Given the array of integers `nums`, you will choose two different indices i and j of that array. Return the maximum value of `(nums[i]-1)*(nums[j]-1)`. - **Learn**: Find the 2 largest elements in nums
 - [1748. Sum of Unique Elements](./solution/1748_Sum_of_Unique_Elements.py)
+
   - **Learn**: Using Hash Table to calculate Unique Element (like below code), we can use `collections.Counter(nums)`
+
+  ```Python
+        for num in nums:
+          if num in dict:
+              dict[num]+=1
+          else:
+              dict[num]=1
+  ```
+
+  - **Learn**: Using Hash Table to calculate Unique Element (like below code), we can use `collections.Counter(nums)`
+
   ```Python
         for num in nums:
           if num in dict:
@@ -232,11 +281,22 @@ for index, value in enumerate(arr):
 | Append             |   `O(1)`   | Append (Inserrt to full array) can be handled by `resizing`, i.e: allocating a new array with addtional memory and copying over the entries from the original array.<br>However, the average time for insertion is constant as `resizing` is very infrequent. |
 | Insert @ ith index |  `O(n-i)`  | Use to insert First Element to array `list.insert(0,new_element)`                                                                                                                                                                                             |
 | Delete @ ith index |  `O(n-i)`  | Delete an element @ ith from an array requires moving all successive elements on over to the left to fill the vacated @ ith                                                                                                                                   |
+| Operation          | Complexity | Description                                                                                                                                                                                                                                                   |
+| ------------------ | :--------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Retrieve           |   `O(1)`   |                                                                                                                                                                                                                                                               |
+| Update             |   `O(1)`   |                                                                                                                                                                                                                                                               |
+| Append             |   `O(1)`   | Append (Inserrt to full array) can be handled by `resizing`, i.e: allocating a new array with addtional memory and copying over the entries from the original array.<br>However, the average time for insertion is constant as `resizing` is very infrequent. |
+| Insert @ ith index |  `O(n-i)`  | Use to insert First Element to array `list.insert(0,new_element)`                                                                                                                                                                                             |
+| Delete @ ith index |  `O(n-i)`  | Delete an element @ ith from an array requires moving all successive elements on over to the left to fill the vacated @ ith                                                                                                                                   |
 
 ## 2.2. Array Problems
 
 ### 2.2.1. 1D Array
 
+| Problems                                                | Difficulty |                     Solutions                      | Description                                                          |
+| ------------------------------------------------------- | :--------: | :------------------------------------------------: | :------------------------------------------------------------------- |
+| 11. Container With Most Water                           |  `Medium`  | [Code](./solution/11_Container_With_Most_Water.py) | Need to start from both 2 end and go inwards                         |
+| [66. Plus One](https://leetcode.com/problems/plus-one/) |   `Easy`   |         [Code](./solution/66_Plus_One.py)          | Using `list.insert(0,new_element)` for first element insert to array |
 | Problems                                                | Difficulty |                     Solutions                      | Description                                                          |
 | ------------------------------------------------------- | :--------: | :------------------------------------------------: | :------------------------------------------------------------------- |
 | 11. Container With Most Water                           |  `Medium`  | [Code](./solution/11_Container_With_Most_Water.py) | Need to start from both 2 end and go inwards                         |
@@ -247,7 +307,16 @@ for index, value in enumerate(arr):
     - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
     - First iteration: go Left to right, move `element` < `pivot` to left
     - Second iteration: go Right to left, move `element` > `pivot` to right, stop when meeting `element` < `pivot`.
+  - **Learn #1**: to sort an array with (3 type of element) in Time Complexity O(n), use `Dutch National Flag` algo.
+    - Select pivot as a middle number, say array contains [0,1,2], choose `pivot=1`
+    - First iteration: go Left to right, move `element` < `pivot` to left
+    - Second iteration: go Right to left, move `element` > `pivot` to right, stop when meeting `element` < `pivot`.
 - [1299. Replace Elements with Greatest Element on Right Side](./solution/1299_Replace_Elements_with_Greatest_Element_on_Right_Side.py)
+  - **Learn #1**: Look at the problem from Right to Left
+  ```Python
+  Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
+  Optimal  : arr = [17,18,5,4,6,1] > [, , , , , , -1] curMax=1 > [, , , , , 1,-1] curMax=6
+  ```
   - **Learn #1**: Look at the problem from Right to Left
   ```Python
   Tradition: arr = [17,18,5,4,6,1] > [18, , , , , , ]          > [18,6, , , , , ]
@@ -257,6 +326,21 @@ for index, value in enumerate(arr):
 ### 2.2.2. 2D Matrix
 
 - [1351. Count Negative Numbers in a Sorted Matrix](./solution/1351_Count_Negative_Numbers_in_a_Sorted_Matrix.py)
+  - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase
+  - **Learn #2**: `Q(m*log(n))` Sorted Array => Binary Search Tree: to search to position of First Negative Number in the Array
+  ```Python
+   def binarySearch(row):
+          start = 0
+          end = len(row) - 1
+          while (start <= end):
+              # Mid post
+              mid = start + (end - start)//2
+              if (row[mid] < 0):
+                  end = mid - 1
+              else:
+                  start = mid + 1
+          return len(row) - start
+  ```
   - **Learn #1**: `O(n+m)` 2D Array => Using 2-Pointer Approach => "trace" the outline of the staircase
   - **Learn #2**: `Q(m*log(n))` Sorted Array => Binary Search Tree: to search to position of First Negative Number in the Array
   ```Python
@@ -288,12 +372,22 @@ for index, value in enumerate(arr):
 | [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) |  `Medium`  |      [Code](./solution/92_Reverse_Linked_List_II.py)      |                                                                    |
 | [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)    |  `Medium`  |      [Code](./solution/142_Linked_List_Cycle_II.py)       | :star: **Good Algo to do** Need to calculate the distance to reach |
 | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)      |   `Easy`   |       [Code](./solution/206_Reverse_Linked_List.py)       |                                                                    |
+| Problems                                                                            | Difficulty |                         Solutions                         | Description                                                        |
+| ----------------------------------------------------------------------------------- | :--------: | :-------------------------------------------------------: | :----------------------------------------------------------------- |
+| 19. Remove Nth Node From End of Lists                                               |  `Medium`  | [Code](./solution/19_Remove_Nth_Node_From_End_of_List.py) |                                                                    |
+| [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) |  `Medium`  |      [Code](./solution/92_Reverse_Linked_List_II.py)      |                                                                    |
+| [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)    |  `Medium`  |      [Code](./solution/142_Linked_List_Cycle_II.py)       | :star: **Good Algo to do** Need to calculate the distance to reach |
+| [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)      |   `Easy`   |       [Code](./solution/206_Reverse_Linked_List.py)       |                                                                    |
 
 # 4. Hash Map
 
 ## 4.1. Keynotes
 
 - `len(d)`: return numbers of items in dictionary
+- `d[key]` or `d.get(key, default_value)`: return corresponding value with specific key, return _default_value_ when key is not found
+- `in` or `not in`: **membership operators**
+- `d.pop(key)` or `del d[key]`: remove an item from the dictionary
+  To access keys, values, and items
 - `d[key]` or `d.get(key, default_value)`: return corresponding value with specific key, return _default_value_ when key is not found
 - `in` or `not in`: **membership operators**
 - `d.pop(key)` or `del d[key]`: remove an item from the dictionary
@@ -326,6 +420,10 @@ q.popleft()
 | -------------------------- | :--------: | :---------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 622. Design Circular Queue |  `Medium`  | [Code](./solution/622_Design_Circular_Queue.py) | To circular the array: `self.tail = (self.tail + 1)%self.size` For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/ |
 
+| Problems                   | Difficulty |                    Solutions                    | Description                                                                                                                                                                                                                                                                                                     |
+| -------------------------- | :--------: | :---------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 622. Design Circular Queue |  `Medium`  | [Code](./solution/622_Design_Circular_Queue.py) | To circular the array: `self.tail = (self.tail + 1)%self.size` For enqueue, need to take care only the tail, for dequeue, need to take care only the head. Please refer the link for the circular queue example https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/ |
+
 # Part B: Algorithms
 
 # 1. Recursion
@@ -335,6 +433,9 @@ q.popleft()
     - `fib(1) = fib(2) = 1`
     - `fib(n) = fib(n-1) + fib(n-2)`
 
+| Problems                |                  Solutions                   | Difficulty | Description                |
+| ----------------------- | :------------------------------------------: | ---------- | -------------------------- |
+| 24. Swap Nodes in Pairs | [Code](./solution/24_Swap_Nodes_in_Pairs.py) | `Medium`   | Refer to the code comments |
 | Problems                |                  Solutions                   | Difficulty | Description                |
 | ----------------------- | :------------------------------------------: | ---------- | -------------------------- |
 | 24. Swap Nodes in Pairs | [Code](./solution/24_Swap_Nodes_in_Pairs.py) | `Medium`   | Refer to the code comments |
@@ -399,6 +500,9 @@ q.popleft()
 | Problems                             |  Type   |                         Solutions                         | Difficulty | Description                |
 | ------------------------------------ | :-----: | :-------------------------------------------------------: | :--------: | -------------------------- |
 | 797. All Paths From Source to Target | **DAG** | [Code](./solution/797_All_Paths_From_Source_to_Target.py) |  `Medium`  | DFS without the color flag |
+| Problems                             |  Type   |                         Solutions                         | Difficulty | Description                |
+| ------------------------------------ | :-----: | :-------------------------------------------------------: | :--------: | -------------------------- |
+| 797. All Paths From Source to Target | **DAG** | [Code](./solution/797_All_Paths_From_Source_to_Target.py) |  `Medium`  | DFS without the color flag |
 
 # 4. Graph Theory
 
@@ -413,8 +517,15 @@ q.popleft()
 | Problems                             |                         Solutions                         | Difficulty | Description             |
 | ------------------------------------ | :-------------------------------------------------------: | ---------- | ----------------------- |
 | 1584. Min Cost to Connect All Points | [Code](./solution/1584_Min_Cost_to_Connect_All_Points.py) | `Medium`   | Using Kruskal Algorithm |
+| Problems                             |                         Solutions                         | Difficulty | Description             |
+| ------------------------------------ | :-------------------------------------------------------: | ---------- | ----------------------- |
+| 1584. Min Cost to Connect All Points | [Code](./solution/1584_Min_Cost_to_Connect_All_Points.py) | `Medium`   | Using Kruskal Algorithm |
 
 ## 4.3. Minimum Spanning Tree - Prim Algorithm
+
+| Problems                             |                         Solutions                         | Difficulty | Description          |
+| ------------------------------------ | :-------------------------------------------------------: | ---------- | -------------------- |
+| 1584. Min Cost to Connect All Points | [Code](./solution/1584_Min_Cost_to_Connect_All_Points.py) | `Medium`   | Using Prim Algorithm |
 
 | Problems                             |                         Solutions                         | Difficulty | Description          |
 | ------------------------------------ | :-------------------------------------------------------: | ---------- | -------------------- |
@@ -434,6 +545,9 @@ q.popleft()
 | Algo Name                                                                |            Note             |
 | ------------------------------------------------------------------------ | :-------------------------: |
 | [Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js) | Shortest Path; Closer Nodes |
+| Algo Name                                                                |            Note             |
+| ------------------------------------------------------------------------ | :-------------------------: |
+| [Breadth First Search (BFS)](/algorithm/searching/breadthFirstSearch.js) | Shortest Path; Closer Nodes |
 
 # LeetCode Solutions
 
@@ -442,6 +556,9 @@ q.popleft()
 #### General Tips for Tree:
 
 - **Learn #1**: Search Types
+
+  - BFS : While ? Because using Recursion costs additional Space Complexity due to Recusive call in Stack
+  - DFS : Recursion
 
   - BFS : While ? Because using Recursion costs additional Space Complexity due to Recusive call in Stack
   - DFS : Recursion
@@ -472,6 +589,18 @@ def dfs_postOrder(root, res):
 dfs_postOrder(root, [])
 ```
 
+| Problems                                                                                   |                               Solutions                               | Difficulty | Description                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------: | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 98. Validate Binary Search Tree                                                            |         [Code](./solution/98_Validate_Binary_Search_Tree.py)          | `Medium`   | Recursion: check one by one node to ensure that low < node.val < hight. Why low & high ? because we need to ensure the left and right child to be within the range  |
+| 100. Same Tree                                                                             |                  [Code](./solution/100_Same_Tree.py)                  | `Easy`     | Recursion: Compare 2 root, then recusively compare both left with left and right with right sub-tree                                                                |
+| 101. Symmetric Tree                                                                        |               [Code](./solution/101_Symmetric_Tree.py)                | `Easy`     | Recursion: Call a recursive function on left and right Sub-trees                                                                                                    |
+| 104. Maximum Depth of Binary Tree                                                          |       [Code](./solution/104_Maximum_Depth_of_Binary_Tree.java)        |            | DFS                                                                                                                                                                 |
+| [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/reverse-string/) |    [Code](./solution/107_Binary_Tree_Level_Order_Traversal_II.py)     |            | BFS + Each Tree Level Traversal <br> <img src="https://user-images.githubusercontent.com/64508435/89198914-71fcb980-d5e0-11ea-9f4b-77ae4364bd1b.JPG" width="500" /> |
+| 112. Path Sum                                                                              |                  [Code](./solution/112_Path_Sum.py)                   | `Easy`     | Need to check at leaf node, what is the remaining sum                                                                                                               |
+| 116. Populating Next Right Pointers in Each Node                                           | [Code](./solution/116_Populating_Next_Right_Pointers_in_Each_Node.py) | `Medium`   | BFS                                                                                                                                                                 |
+| 543. Diameter of Binary Tree                                                               |           [Code](./solution/543_Diameter_of_Binary_Tree.py)           | `Easy`     | Need to calculate the left and the right height of the tree, then compare left_height + right_height with the max diameter                                          |
+| 700. Search in a Binary Search Tree                                                        |       [Code](./solution/700_Search_in_a_Binary_Search_Tree.py)        | `Easy`     |                                                                                                                                                                     |
+| 701. Insert into a Binary Search Tree                                                      |      [Code](./solution/701_Insert_into_a_Binary_Search_Tree.py)       | `Medium`   | Same concept as Search in BST                                                                                                                                       |
 | Problems                                                                                   |                               Solutions                               | Difficulty | Description                                                                                                                                                         |
 | ------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------: | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 98. Validate Binary Search Tree                                                            |         [Code](./solution/98_Validate_Binary_Search_Tree.py)          | `Medium`   | Recursion: check one by one node to ensure that low < node.val < hight. Why low & high ? because we need to ensure the left and right child to be within the range  |

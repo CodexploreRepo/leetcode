@@ -1,5 +1,39 @@
 # Sliding Windows
 
+## Introduction
+
+- Template for the Sliding Windows problem:
+
+```Python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+
+        # initialise left and right pointer
+        l, r = 0, 1
+        sub_set, max_len = set(s[l]), 1
+
+        # ensure that r pointer is not exceed then len(s)
+        while r < len(s):
+            if s[r] not in sub_set:
+                sub_set.add(s[r])
+                max_len = max(max_len, len(sub_set))
+                r += 1
+            else:
+                # if r in the sub_set, we will remove the left-most item out of the sub_set
+                # increase l pointer to the next pos
+                sub_set.remove(s[l])
+                l += 1
+
+        return max_len
+
+```
+
+## Examples
+
 ```C
 nums = [100, 200, 100, 400, 500, 2, 600]
 k = 3
@@ -20,7 +54,7 @@ for(int i = 0; i < n-k+1; i++){
 }
 ```
 
-<p align="center"><img src="../assets/img/sliding_windows_ex1.webp"></p>
+<p align="center"><img src="../.././assets/img/sliding_windows_ex1.webp"></p>
 
 ```C
 // SLIDING WINDOWS O(N):
