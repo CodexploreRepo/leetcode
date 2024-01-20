@@ -4,8 +4,6 @@
 
 This is powered by CodeXplore
 
-This is powered by CodeXplore
-
 # Table of contents
 
 - [Table of contents](#table-of-contents)
