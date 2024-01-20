@@ -7,7 +7,7 @@
 
 ### Properties and Applications
 
-- Backtracking is like a depth-first search(DFS) with an added constraint that we stop exploring the subtree as soon as we know for sure that it won’t lead to valid solution.
+- Backtracking is like a depth-first search (DFS) with an added constraint that we stop exploring the subtree as soon as we know for sure that it won’t lead to valid solution.
 - The problems that can be solved using this tool generally satisfy the following criteria :
   - You are explicitly asked to return **a collection of all answers**.
   - You are concerned with what the actual solutions are rather than say the most optimum value of some parameter. (if it were the latter it’s most likely DP or greedy).
