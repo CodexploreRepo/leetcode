@@ -26,4 +26,4 @@
 - Ideas:
   - Branch 1: If we include the first item in the subset, say `[1]`, so the renaming choice to generate another the subset on top of `[1]` is either `[2,3]`
   - Branch 2: If we include the second in the subset, say `[2]`, so the renaming choice to generate another the subset on top of `[2]` is only `[3]` as we already has the subset `[1,2]` in the first branch
-  <p align="center"><img src="../assets/img/78_subset.jpg"></p>
+  <p align="center"><img src="../../assets/img/78_subset.jpg"></p>
